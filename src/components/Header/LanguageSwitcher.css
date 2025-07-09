@@ -1,0 +1,46 @@
+.language-switcher {
+    display: flex;
+    align-items: center;
+}
+
+.language-switcher__button {
+    margin: 0 8px;
+    background: none;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    color: #000;
+    position: relative;
+    line-height: 1;
+    padding: 4px 0;
+    transition: color 0.3s ease;
+}
+
+.language-switcher__button::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #8d0101;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease;
+}
+
+.language-switcher__button:hover {
+    color: #8d0101;
+}
+
+.language-switcher__button:hover::after {
+    transform: scaleX(1);
+}
+
+.language-switcher__button_active {
+    color: #8d0101;
+}
+
+.language-switcher__button_active::after {
+    transform: scaleX(1);
+}

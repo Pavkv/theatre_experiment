@@ -1,6 +1,23 @@
 .header {
+    position: relative;
     display: flex;
     justify-content: space-between;
+}
+
+.header::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    background-color: #8d0101;
+    width: 100vw;
+    left: -80px;
+    bottom: -5px;
+}
+
+.header__link {
+    text-decoration: none;
+    align-self: center;
+    color: #8d0101;
 }
 
 .header__logo {

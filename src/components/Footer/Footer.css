@@ -1,0 +1,23 @@
+.footer {
+    background-color: #e0dbd5;
+    width: 100vw;
+    padding: 25px 0;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.footer::before {
+    content: '';
+    position: absolute;
+    height: 2px;
+    background-color: #8d0101;
+    width: 100vw;
+    top: -5px;
+}
+
+.footer__text {
+    text-align: center;
+    margin: 0;
+    color: #8d0101;
+}

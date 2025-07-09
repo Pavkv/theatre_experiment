@@ -9,6 +9,30 @@
     color: #000;
 }
 
+.nav__link {
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+}
+
+.nav__link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #8d0101;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease;
+}
+
 .nav__link:hover {
     color: #8d0101;
+}
+
+.nav__link:hover::after {
+    transform: scaleX(1);
 }
