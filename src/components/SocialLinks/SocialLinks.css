@@ -16,11 +16,12 @@
     -webkit-mask-size: contain;
     -webkit-mask-repeat: no-repeat;
     -webkit-mask-position: center;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .social-links__link:hover {
     background-color: #8d0101;
+    box-shadow: 0 4px 12px rgba(141, 1, 1, 0.25);
 }
 
 .social-links__link--facebook {

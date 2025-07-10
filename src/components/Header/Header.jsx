@@ -8,17 +8,20 @@ export default function Header() {
     const { t } = useLanguage();
     return (
         <header className="header">
-            <Link
-                to="/"
-                className="header__link"
-            >
-                <p className="header__logo">{t.logo}</p>
-            </Link>
-            <nav className="header__navigation">
-                <Navigation t={t} />
-            </nav>
-            <SocialLinks />
-            <LanguageSwitcher />
+            <div className="header__content">
+                <Link
+                    to="/"
+                    className="header__link"
+                >
+                    <p className="header__logo">{t.logo}</p>
+                    {/*<p className="header__tagline">All styles are good except the boring kind.</p>*/}
+                </Link>
+                <nav className="header__navigation">
+                    <Navigation t={t} />
+                </nav>
+                <SocialLinks />
+                <LanguageSwitcher />
+            </div>
         </header>
     );
 }

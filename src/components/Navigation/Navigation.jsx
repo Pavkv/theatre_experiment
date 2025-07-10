@@ -8,7 +8,7 @@ export default function nav({t}) {
                     to="/about"
                     className="nav__link"
                 >
-                    {t.about_btn}
+                    {t.nav.about}
                 </Link>
             </li>
             <li>
@@ -16,7 +16,7 @@ export default function nav({t}) {
                     to="/team"
                     className="nav__link"
                 >
-                    {t.team_btn}
+                    {t.nav.team}
                 </Link>
             </li>
             <li>
@@ -24,7 +24,7 @@ export default function nav({t}) {
                     to="/performances"
                     className="nav__link"
                 >
-                    {t.performances_btn}
+                    {t.nav.performances}
                 </Link>
             </li>
             <li>
@@ -32,7 +32,7 @@ export default function nav({t}) {
                     to="/media"
                     className="nav__link"
                 >
-                    {t.media_btn}
+                    {t.nav.media}
                 </Link>
             </li>
         </ul>

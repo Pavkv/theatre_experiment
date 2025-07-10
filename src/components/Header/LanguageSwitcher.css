@@ -1,46 +1,35 @@
 .language-switcher {
     display: flex;
     align-items: center;
+    gap: 20px;
 }
 
 .language-switcher__button {
-    margin: 0 8px;
-    background: none;
+    padding: 8px 16px;
+    background-color: #ffffffcc;
     border: none;
-    font-weight: bold;
+    border-bottom: 4px solid transparent;
+    font-family: "Roboto Slab", serif;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #212121;
+    border-radius: 8px;
     cursor: pointer;
-    color: #000;
-    position: relative;
-    line-height: 1;
-    padding: 4px 0;
-    transition: color 0.3s ease;
-}
-
-.language-switcher__button::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 2px;
-    background-color: #8d0101;
-    transform: scaleX(0);
-    transform-origin: center;
-    transition: transform 0.3s ease;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
 }
 
 .language-switcher__button:hover {
     color: #8d0101;
-}
-
-.language-switcher__button:hover::after {
-    transform: scaleX(1);
+    transform: translateY(-2px);
+    border-left-color: #8d0101;
+    background-color: #fdf8f6;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
 }
 
 .language-switcher__button_active {
     color: #8d0101;
-}
-
-.language-switcher__button_active::after {
-    transform: scaleX(1);
+    border-bottom-color: #8d0101;
+    background-color: #fdf5f0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
