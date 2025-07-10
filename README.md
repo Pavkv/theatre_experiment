@@ -1,12 +1,37 @@
-# React + Vite
+# 🎭 Theatre Experiment Website Remaster
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern reimagining of the Theatre Experiment website, combining elegant literary design with responsive web technologies. This project revamps the user experience and visual identity to better reflect the artistic vision of the theater, improve maintainability, and ensure accessibility for all audiences.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Web Link
 
-## Expanding the ESLint configuration
+https://whatowearexpress.twilightparadox.com
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🌟 Features
+
+- 📖 **Book-Inspired Aesthetic**: Typography and layout designed to evoke the feeling of a stage script or classical literature.
+- 🌐 **Multilingual Support**: Dynamic language switcher built with React context for seamless internationalization.
+- 🖼️ **Responsive Visuals**: Adaptive grid-based layouts and flexible images optimized for desktop, tablet, and mobile.
+- 🎨 **Custom Components**: Modular React components for main content, navigation, header, footer, and social icons.
+- 🧠 **Accessible & Maintainable**: Semantic HTML, scalable CSS, and clear structure for ease of use and long-term growth.
+
+---
+
+## 🚀 Tech Stack
+
+- **React** with React Router
+- **CSS Modules / SCSS**
+- **JavaScript (ES6+)**
+- **Custom Fonts & Assets**
+- **Responsive & accessible design principles**
+
+---
+
+## 👨‍💻 Author
+
+[Pasha Zobov](https://github.com/Pavkv)
+2025 © WTWR
+
