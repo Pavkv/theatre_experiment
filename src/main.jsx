@@ -7,7 +7,7 @@ import { LanguageProvider } from "./contexts/LanguageContext.jsx";
 
 createRoot(document.getElementById('root')).render(
     <StrictMode>
-        <BrowserRouter basename="/theaterExperiment/">
+        <BrowserRouter basename="/theatre_expriment/">
             <LanguageProvider>
                 <App />
             </LanguageProvider>
