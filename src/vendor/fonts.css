@@ -74,5 +74,12 @@
   font-family: Lobster;
   font-weight: 500;
   font-style: normal;
-  src: url("fonts/Lobster-Regular.ttf") format("ttf");
+  src: url("fonts/Lobster-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  font-weight: 400;
+  font-style: normal;
+  src: url("fonts/playfair-display-400-regular.ttf") format("truetype");
 }
