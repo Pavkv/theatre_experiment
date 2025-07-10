@@ -6,7 +6,7 @@ A modern reimagining of the Theatre Experiment website, combining elegant litera
 
 ## Web Link
 
-https://whatowearexpress.twilightparadox.com
+https://pavkv.github.io/theatre_expriment/
 
 ---
 
