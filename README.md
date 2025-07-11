@@ -35,5 +35,5 @@ https://pavkv.github.io/theatre_expriment/
 ## 👨‍💻 Author
 
 [Pasha Zobov](https://github.com/Pavkv)
-2025 © WTWR
+2025
 
