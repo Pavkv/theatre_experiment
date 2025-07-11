@@ -5,6 +5,7 @@ import {Route, Routes} from "react-router-dom";
 import About from "../About/About.jsx";
 import Team from "../Team/Team.jsx";
 import Performances from "../Performances/Performances.jsx";
+import Media from "../Media/Media.jsx";
 
 export default function App() {
     return (
@@ -26,6 +27,10 @@ export default function App() {
                 <Route
                     path="/performances"
                     element={<Performances/>}
+                />
+                <Route
+                    path="/media"
+                    element={<Media/>}
                 />
             </Routes>
             <Footer/>

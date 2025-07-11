@@ -45,7 +45,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 60px 40px;
-    margin: 0 80px;
+    margin: 0 80px 25px;
     width: calc(100% - 160px);
 }
 

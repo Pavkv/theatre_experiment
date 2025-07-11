@@ -74,6 +74,34 @@ export const locales = {
                     image: new URL("../assets/performances/zoya_s_apartment.jpg", import.meta.url).href
                 }
             ]
+        },
+        media: {
+            title: "Media Gallery",
+            allOccasions: "All Occasions",
+            allYears: "All Years",
+            gallery: [
+                {
+                    id: 0,
+                    url: new URL('../assets/title_image.jpg', import.meta.url).href,
+                    caption: "Performance of 'Zoya's Apartment'",
+                    occasion: "Performance",
+                    year: "2022"
+                },
+                {
+                    id: 1,
+                    url: new URL("../assets/poetry.jpg", import.meta.url).href,
+                    caption: "Poetry Night Event",
+                    occasion: "Event",
+                    year: "2023"
+                },
+                {
+                    id: 2,
+                    url: new URL("../assets/rhino.jpg", import.meta.url).href,
+                    caption: "Rhinoceros Rehearsal",
+                    occasion: "Rehearsal",
+                    year: "2024"
+                }
+            ]
         }
     },
     ru: {
@@ -149,6 +177,34 @@ export const locales = {
                     date: "Осень 2022",
                     description: " Действие пьесы разворачивается в период НэПа, в двадцатые годы прошлого столетия в Москве. Главной героиней пьесы является Зоя Денисовна Пельц, открывшая в собственной квартире мастерскую по пошиву одежды, под прикрытием которой обустраивает дом свиданий. Изображение в пьесе квартиры является олицетворением города, такого же скандально, шумного, разъяренного, иллюзорного и лживого. Пронзительная драма в виде жутковатого балагана, финалом которого становится крах и исчезновение прежней жизни.... Ничего не напоминает? Давайте разбираться вместе! Увидимся в театре!",
                     image: new URL("../assets/performances/zoya_s_apartment.jpg", import.meta.url).href
+                }
+            ]
+        },
+        media: {
+            title: "Галерея",
+            allOccasions: "Все События",
+            allYears: "Все Года",
+            gallery: [
+                {
+                    id: 0,
+                    url: new URL('../assets/title_image.jpg', import.meta.url).href,
+                    caption: "Спектакль 'Зойкина Квартира'",
+                    occasion: "Спектакль",
+                    year: "2022"
+                },
+                {
+                    id: 1,
+                    url: new URL("../assets/poetry.jpg", import.meta.url).href,
+                    caption: "Поэтический Вечер",
+                    occasion: "Событие",
+                    year: "2023"
+                },
+                {
+                    id: 2,
+                    url: new URL("../assets/rhino.jpg", import.meta.url).href,
+                    caption: "Репетиция 'Носорога'",
+                    occasion: "Репетиция",
+                    year: "2024"
                 }
             ]
         }
