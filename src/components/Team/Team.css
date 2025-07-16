@@ -46,16 +46,19 @@
 
 .team__photo {
     width: 100%;
+    aspect-ratio: 1/1;
+    height: auto;
+    flex-shrink: 0;
     border-radius: 8px;
+    border: 2px solid #8d0101;
     object-fit: cover;
     margin-bottom: 16px;
-    border: 2px solid #8d0101;
     transition: transform 0.3s ease;
 }
 
 .team__name {
     font-size: 1.5rem;
-    margin: 8px 0 4px;
+    margin: 0;
     color: #8d0101;
 }
 
@@ -70,7 +73,11 @@
     color: #333;
     line-height: 1.5;
     text-align: justify;
-    margin-top: 10px;
+    margin: 5px 0;
+}
+
+.team__bio_bullet {
+    margin: 0;
 }
 
 .team__expanded {
@@ -84,12 +91,19 @@
     border-radius: 12px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     animation: fadeIn 0.3s ease;
+    align-items: flex-start;
     flex-wrap: wrap;
 }
 
 .team__photo--large {
     max-width: 300px;
+    width: 100%;
+    aspect-ratio: auto;
+    height: auto;
+    object-fit: contain;
     flex-shrink: 0;
+    border-radius: 8px;
+    border: 2px solid #8d0101;
 }
 
 .team__photo--large:hover {

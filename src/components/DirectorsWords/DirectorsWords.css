@@ -1,0 +1,104 @@
+.director__card {
+    position: relative;
+    background: #fff;
+    border-radius: 8px;
+    padding: 40px 50px;
+    max-width: 450px;
+    min-height: 550px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    font-family: "Roboto Slab", serif;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-self: center;
+}
+
+.director__card {
+    position: relative;
+    background: #fff;
+    border-radius: 8px;
+    padding: 40px 50px;
+    max-width: 450px;
+    height: 700px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    font-family: "Roboto Slab", serif;
+    overflow: hidden;
+}
+
+.director__quote {
+    font-family: "Playfair Display", serif;
+    font-size: 1.5rem;
+    color: #8d0101;
+    text-align: center;
+}
+
+.director__text {
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.5;
+    text-align: justify;
+    flex-grow: 0;
+}
+
+.director__sign {
+    font-family: "Playfair Display", serif;
+    margin-top: 40px;
+    text-align: right;
+    font-style: normal;
+}
+
+.director__sign-text {
+    margin: 4px 0;
+    color: #444;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+.director__sign-text:first-child {
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: #000;
+}
+
+.director__dots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: auto;
+    padding-top: 24px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #8d0101;
+    opacity: 0.4;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.dot.active {
+    opacity: 1;
+}
+
+.director__arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #8d0101;
+    cursor: pointer;
+    z-index: 10;
+    padding: 0 10px;
+}
+
+.director__arrow.left {
+    left: 5px;
+}
+
+.director__arrow.right {
+    right: 5px;
+}

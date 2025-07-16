@@ -6,6 +6,12 @@
     background-color: #fff;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
     z-index: 1000;
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+
+.header--scrolled {
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(4px);
 }
 
 .header::after {

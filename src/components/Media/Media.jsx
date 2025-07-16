@@ -8,12 +8,23 @@ export default function Media() {
     const [selectedYear, setSelectedYear] = useState("all");
     const [modalImage, setModalImage] = useState(null);
 
-    const occasions = ["all", ...new Set(t.media.gallery.map((img) => img.occasion))];
-    const years = ["all", ...new Set(t.media.gallery.map((img) => img.year))];
+    const occasions = [
+        "all",
+        ...new Set(t.media.gallery.map((img) => img.occasion + "s")),
+    ];
+
+    const years = [
+        "all",
+        ...[...new Set(t.media.gallery.map((img) => img.year))].sort((a, b) => b - a),
+    ];
 
     const filteredGallery = t.media.gallery.filter((img) => {
+        const normalizedOccasion = selectedOccasion.endsWith("s")
+            ? selectedOccasion.slice(0, -1)
+            : selectedOccasion;
+
         return (
-            (selectedOccasion === "all" || img.occasion === selectedOccasion) &&
+            (selectedOccasion === "all" || img.occasion === normalizedOccasion) &&
             (selectedYear === "all" || img.year === selectedYear)
         );
     });

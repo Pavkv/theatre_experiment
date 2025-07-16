@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useLanguage } from "../../contexts/LanguageContext.jsx";
 import "./Team.css";
+import DisplayText from "../../utils/functions.jsx";
 
 export default function Team() {
     const { t } = useLanguage();
@@ -19,14 +20,14 @@ export default function Team() {
             {expandedMember && (
                 <div className="team__expanded">
                     <img
-                        src={expandedMember.photo}
+                        src={expandedMember.photo.large}
                         alt={expandedMember.name}
                         className="team__photo team__photo--large"
                     />
                     <div className="team__info">
                         <h3 className="team__name">{expandedMember.name}</h3>
                         <p className="team__role">{expandedMember.title}</p>
-                        <p className="team__bio">{expandedMember.bio}</p>
+                        <DisplayText list={expandedMember.bio} textClass={"team__bio"} />
                         <button onClick={() => toggleExpand(null)} className="team__close">×</button>
                     </div>
                 </div>
@@ -40,7 +41,7 @@ export default function Team() {
                         onClick={() => toggleExpand(member.id)}
                     >
                         <img
-                            src={member.photo}
+                            src={member.photo.small}
                             alt={member.name}
                             className="team__photo"
                         />
