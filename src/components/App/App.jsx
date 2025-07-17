@@ -9,21 +9,31 @@ import Performances from "../Performances/Performances.jsx";
 import Media from "../Media/Media.jsx";
 
 export default function App() {
-    const [isMobile, setIsMobile] = useState(window.innerWidth <= 879);
+    const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+    const [isTablet, setIsTablet] = useState(window.innerWidth > 768 && window.innerWidth <= 1024);
     const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 
     useEffect(() => {
-        const handleResize = () => {
-            setIsMobile(window.innerWidth <= 768);
-            if (window.innerWidth > 768) setMobileMenuOpen(false);
-        };
+        (() => {
+            const handleResize = () => {
+                setIsMobile(window.innerWidth <= 768);
+                if (window.innerWidth > 768) setMobileMenuOpen(false);
+            };
 
-        window.addEventListener('resize', handleResize);
-        return () => window.removeEventListener('resize', handleResize);
+            window.addEventListener('resize', handleResize);
+            return () => window.removeEventListener('resize', handleResize);
+        })();
+        (() => {
+            const handleTabletResize = () => {
+                setIsTablet(window.innerWidth > 768 && window.innerWidth <= 1024);
+            };
+
+            window.addEventListener('resize', handleTabletResize);
+            return () => window.removeEventListener('resize', handleTabletResize);
+        })();
     }, []);
 
     const toggleMobileMenu = () => setMobileMenuOpen((prev) => !prev);
-
     return (
         <div className="app">
             <Header isMobile={isMobile} isMobileMenuOpen={isMobileMenuOpen} toggleMobileMenu={toggleMobileMenu}/>
@@ -31,7 +41,7 @@ export default function App() {
                  onClick={isMobileMenuOpen ? toggleMobileMenu : null}>
                 <Routes>
                     <Route path="/" element={<Main/>}/>
-                    <Route path="/about" element={<About isMobile={isMobile}/>}/>
+                    <Route path="/about" element={<About isMobile={isMobile} isTablet={isTablet}/>}/>
                     <Route path="/team" element={<Team isMobile={isMobile}/>}/>
                     <Route path="/performances" element={<Performances isMobile={isMobile}/>}/>
                     <Route path="/media" element={<Media isMobile={isMobile}/>}/>

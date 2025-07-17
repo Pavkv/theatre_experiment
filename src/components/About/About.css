@@ -20,7 +20,7 @@
 .about__title::after {
     content: '';
     display: block;
-    width: 500px;
+    width: 400px;
     height: 3px;
     background-color: #8d0101;
     margin: 20px auto 0;
@@ -107,6 +107,55 @@
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(30px); }
     to { opacity: 1; transform: translateY(0); }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .about {
+        padding: 20px 0;
+    }
+
+    .about__title {
+        font-size: 2.6rem;
+        margin-bottom: 32px;
+        padding: 0 24px;
+    }
+
+    .about__title::after {
+        width: 250px;
+        height: 2.5px;
+        margin-top: 12px;
+    }
+
+    .about__intro {
+        font-size: 1.15rem;
+        margin: 0 40px 40px;
+        padding: 20px 26px;
+    }
+
+    .about__content {
+        grid-template-columns: 1fr;
+        margin: 0 40px;
+        width: auto;
+        gap: 40px;
+    }
+
+    .about__text {
+        font-size: 1.1rem;
+        padding: 24px;
+        height: auto;
+    }
+
+    .about__text::first-letter {
+        font-size: 2rem;
+        top: 2px;
+    }
+
+    .about__image {
+        width: calc(100% - 8px);
+        height: auto;
+        border-width: 4px;
+        border-radius: 12px;
+    }
 }
 
 @media (max-width: 768px) {

@@ -91,6 +91,29 @@ body.menu-open {
     width: 100%;
 }
 
+@media (min-width: 769px) and (max-width: 1024px) {
+    .header {
+        padding: 24px 0;
+    }
+
+    .header__content {
+        padding: 0 40px;
+    }
+
+    .header__logo {
+        font-size: 1.5rem;
+    }
+
+    .header__navigation {
+        gap: 24px;
+    }
+
+    .header__extras {
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+
 @media (max-width: 768px) {
     .header {
         position: static;

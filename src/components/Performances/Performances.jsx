@@ -64,7 +64,7 @@ export default function Performances({ isMobile }) {
                 </div>
             ) : (
                 <div>
-                    {expandedId &&
+                    {expandedId != null &&
                         renderExpanded(
                             performances.find((p) => p.id === expandedId)
                         )}
