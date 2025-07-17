@@ -140,3 +140,58 @@
         transform: translateY(0);
     }
 }
+
+@media (max-width: 768px) {
+    .team {
+        padding: 16px;
+    }
+
+    .team__title {
+        font-size: 2rem;
+        margin: 16px 0 24px;
+        padding: 0 12px;
+    }
+
+    .team__grid {
+        gap: 20px;
+    }
+
+    .team__card {
+        max-width: 100%;
+        padding: 16px;
+    }
+
+    .team__name {
+        font-size: 1.3rem;
+    }
+
+    .team__role {
+        font-size: 1rem;
+    }
+
+    .team__bio {
+        font-size: 0.95rem;
+    }
+
+    .team__expanded {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+        margin-bottom: 40px;
+    }
+
+    .team__photo--large {
+        max-width: 100%;
+        aspect-ratio: auto;
+    }
+
+    .team__info {
+        min-width: auto;
+    }
+
+    .team__close {
+        font-size: 1.5rem;
+        top: 0;
+        right: 0;
+    }
+}

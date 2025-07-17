@@ -136,3 +136,58 @@
         transform: translateY(0);
     }
 }
+
+@media (max-width: 768px) {
+    .performances {
+        padding: 16px;
+    }
+
+    .performances__title {
+        font-size: 2rem;
+        margin: 16px 0 24px;
+        padding: 0 12px;
+    }
+
+    .performances__grid {
+        gap: 20px;
+    }
+
+    .performance__card {
+        max-width: 100%;
+        padding: 16px;
+    }
+
+    .performance__name {
+        font-size: 1.3rem;
+    }
+
+    .performance__author,
+    .performance__date {
+        font-size: 1rem;
+    }
+
+    .performance__description {
+        font-size: 0.95rem;
+    }
+
+    .performance__expanded {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+        margin-bottom: 40px;
+    }
+
+    .performance__image--large {
+        max-width: 100%;
+    }
+
+    .performance__info {
+        min-width: auto;
+    }
+
+    .performance__close {
+        font-size: 1.5rem;
+        top: 0;
+        right: 0;
+    }
+}

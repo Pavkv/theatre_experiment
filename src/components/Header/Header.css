@@ -10,7 +10,7 @@
 }
 
 .header--scrolled {
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(4px);
 }
 
@@ -32,11 +32,11 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    position: relative;
 }
 
 .header__link {
     text-decoration: none;
-    align-self: center;
     color: #8d0101;
 }
 
@@ -44,12 +44,86 @@
     font-family: "Playfair Display", serif;
     font-size: 1.75rem;
     font-weight: 600;
-    color: #8d0101;
 }
 
-.header__tagline {
-    font-size: 0.75rem;
-    font-style: italic;
-    color: #6e0000;
-    margin-top: 4px;
+.header__hamburger {
+    display: none;
+    font-size: 1.8rem;
+    background: none;
+    border: none;
+    color: #8d0101;
+    cursor: pointer;
+}
+
+.header__navigation {
+    display: flex;
+}
+
+.header__extras {
+    display: flex;
+    gap: 16px;
+}
+
+.header__mobile-nav {
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition:
+            max-height 0.4s ease,
+            opacity 0.4s ease,
+            transform 0.4s ease;
+    pointer-events: none;
+}
+
+.header__mobile-nav--open {
+    max-height: 1200px;
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+    border-radius: 20px;
+}
+
+body.menu-open {
+    overflow: hidden;
+    height: 100vh;
+    position: fixed;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .header {
+        position: static;
+        padding: 16px 0;
+        border-radius: 5px;
+    }
+
+    .header__mobile-open {
+        position: sticky;
+        padding-bottom: 40px;
+    }
+
+    .header__hamburger {
+        display: block;
+    }
+
+    .header__extras {
+        padding: 20px 0 0;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .header__mobile-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: calc(100% - 40px);
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    .header__content {
+        padding: 0 20px;
+    }
 }

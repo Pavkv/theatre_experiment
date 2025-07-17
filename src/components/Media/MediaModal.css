@@ -58,3 +58,25 @@
         transform: scale(1);
     }
 }
+
+@media (max-width: 768px) {
+    .media__modal-content {
+        width: 90vw;
+        padding: 16px;
+    }
+
+    .media__modal-image {
+        max-height: 60vh;
+        border-width: 2px;
+    }
+
+    .media__modal-caption {
+        font-size: 0.95rem;
+    }
+
+    .media__modal-close {
+        font-size: 1.8rem;
+        top: -7px;
+        right: -5px;
+    }
+}

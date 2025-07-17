@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useLanguage } from "../../contexts/LanguageContext.jsx";
 import MediaModal from "./MediaModal.jsx";
 
-export default function Media() {
+export default function Media({isMobile}) {
     const { t } = useLanguage();
     const [selectedOccasion, setSelectedOccasion] = useState("all");
     const [selectedYear, setSelectedYear] = useState("all");
@@ -45,6 +45,9 @@ export default function Media() {
                         </button>
                     ))}
                 </div>
+
+                {isMobile && (<span className="media__separator" />)}
+
                 <div className="media__tabs">
                     {years.map((yr) => (
                         <button
@@ -76,7 +79,7 @@ export default function Media() {
                             className="media__image"
                             onClick={() => setModalImage(img)}
                         />
-                        <p className="media__caption">{img.caption}</p>
+                        {/*<p className="media__caption">{img.caption}</p>*/}
                     </div>
                 ))}
             </div>

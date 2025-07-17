@@ -111,7 +111,7 @@ export const locales = {
                 {
                     id: 0,
                     url: new URL('../assets/title_image.jpg', import.meta.url).href,
-                    caption: "Performance of 'Zoya's Apartment'",
+                    caption: "Zoya's Apartment",
                     occasion: "Performance",
                     year: "2022"
                 },
@@ -125,7 +125,7 @@ export const locales = {
                 {
                     id: 2,
                     url: new URL("../assets/rhino.jpg", import.meta.url).href,
-                    caption: "Rhinoceros Rehearsal",
+                    caption: "Rhinoceros",
                     occasion: "Rehearsal",
                     year: "2024"
                 }
@@ -244,7 +244,7 @@ export const locales = {
                 {
                     id: 0,
                     url: new URL('../assets/title_image.jpg', import.meta.url).href,
-                    caption: "Спектакль 'Зойкина Квартира'",
+                    caption: "Зойкина Квартира",
                     occasion: "Спектакль",
                     year: "2022"
                 },
@@ -258,7 +258,7 @@ export const locales = {
                 {
                     id: 2,
                     url: new URL("../assets/rhino.jpg", import.meta.url).href,
-                    caption: "Репетиция 'Носорога'",
+                    caption: "Носорог",
                     occasion: "Репетиция",
                     year: "2024"
                 }

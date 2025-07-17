@@ -17,3 +17,9 @@
     color: #8d0101;
     font-weight: 500;
 }
+
+@media (max-width: 768px) {
+    .bullet-list__item {
+        margin: 0;
+    }
+}

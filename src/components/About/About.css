@@ -108,3 +108,52 @@
     from { opacity: 0; transform: translateY(30px); }
     to { opacity: 1; transform: translateY(0); }
 }
+
+@media (max-width: 768px) {
+    .about {
+        padding: 16px 0;
+    }
+
+    .about__title {
+        font-size: 2rem;
+        margin-bottom: 24px;
+        padding: 0 12px;
+    }
+
+    .about__title::after {
+        width: 120px;
+        height: 2px;
+        margin-top: 10px;
+    }
+
+    .about__intro {
+        font-size: 1rem;
+        margin: 0 16px 32px;
+        padding: 16px 20px;
+    }
+
+    .about__content {
+        grid-template-columns: 1fr;
+        margin: 0 16px;
+        width: auto;
+        gap: 32px;
+    }
+
+    .about__text {
+        font-size: 1rem;
+        padding: 20px;
+        height: auto;
+    }
+
+    .about__text::first-letter {
+        font-size: 1.6rem;
+        top: 2px;
+    }
+
+    .about__image {
+        width: calc(100% - 6px);
+        height: auto;
+        border-width: 3px;
+        border-radius: 10px;
+    }
+}

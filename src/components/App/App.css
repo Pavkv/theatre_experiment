@@ -7,4 +7,24 @@
   padding: 0;
   position: relative;
   background-color: #e0dbd5;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app__content {
+  transition: filter 0.3s ease;
+}
+
+.app__content.blurred {
+  filter: blur(6px);
+  pointer-events: none;
+  user-select: none;
+}
+
+@media (max-width: 768px) {
+  .app {
+    font-size: 16px;
+    line-height: 22px;
+  }
 }
