@@ -96,6 +96,10 @@ body.menu-open {
         padding: 24px 0;
     }
 
+    .header::after {
+        display: none;
+    }
+
     .header__content {
         padding: 0 40px;
     }
@@ -119,6 +123,10 @@ body.menu-open {
         position: static;
         padding: 16px 0;
         border-radius: 5px;
+    }
+
+    .header::after {
+        display: none;
     }
 
     .header__mobile-open {

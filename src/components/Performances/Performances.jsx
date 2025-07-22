@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useLanguage } from "../../contexts/LanguageContext.jsx";
+import DisplayText from "../../utils/functions.jsx";
 
 export default function Performances({ isMobile }) {
     const { t } = useLanguage();
@@ -41,7 +42,7 @@ export default function Performances({ isMobile }) {
                 <h3 className="performance__name">{performance.title}</h3>
                 <p className="performance__author">{performance.author}</p>
                 <p className="performance__date">{performance.date}</p>
-                <p className="performance__description">{performance.description}</p>
+                <DisplayText list={performance.description} textClass="performance__description"/>
                 <button
                     onClick={() => toggleExpand(null)}
                     className="performance__close"
