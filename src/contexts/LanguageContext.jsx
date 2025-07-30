@@ -1,5 +1,4 @@
 import React, { createContext, useContext, useState } from "react";
-import { locales } from "../utils/locales";
 
 const LanguageContext = createContext();
 
@@ -8,7 +7,7 @@ export function LanguageProvider({ children }) {
     const value = {
         language,
         setLanguage,
-        t: locales[language],
+        l: language
     };
     return (
         <LanguageContext.Provider value={value}>

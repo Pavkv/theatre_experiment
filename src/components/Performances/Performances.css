@@ -30,7 +30,7 @@
 
 .performances__grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-template-columns: repeat(3, minmax(260px, 1fr));
     gap: 30px;
     justify-items: center;
 }
@@ -97,7 +97,7 @@
 .performance__date {
     font-size: 1.1rem;
     color: #444;
-    margin-bottom: 4px;
+    margin: 4px 0;
     font-style: italic;
 }
 
@@ -107,12 +107,41 @@
     font-style: normal;
 }
 
-.performance__description {
-    font-size: 1rem;
-    color: #333;
-    line-height: 1.5;
+.performance__description-block {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    flex-grow: 1;
+    width: 100%;
+}
+
+.performance__description-full {
+    width: 100%;
+}
+
+.performance__description-columns {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.performance__column {
+    flex: 1;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.6;
+}
+
+.performance__subheader {
+    margin: 0 0 10px;
+    color: #8d0101;
+    font-size: 1.2rem;
+}
+
+.performances__description_justified {
     text-align: justify;
-    margin-top: auto;
+    margin: 0;
 }
 
 .performance__expanded {
@@ -175,6 +204,7 @@
 
     .performances__grid {
         gap: 24px;
+        grid-template-columns: repeat(2, minmax(260px, 1fr));
     }
 
     .performance__card {
@@ -191,8 +221,25 @@
         font-size: 1.05rem;
     }
 
-    .performance__description {
-        font-size: 1rem;
+    .performance__description-columns {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .performance__column {
+        min-width: 100%;
+    }
+
+    .performances__column_description {
+        max-width: 100%;
+    }
+
+    .performance__subheader {
+        font-size: 1.15rem;
+    }
+
+    .performances__subheader_actors {
+        padding-left: 0;
     }
 
     .performance__expanded {
@@ -203,7 +250,7 @@
     }
 
     .performance__image--large {
-        max-width: 100%;
+        max-height: 100%;
     }
 
     .performance__info {
@@ -236,6 +283,7 @@
 
     .performances__grid {
         gap: 20px;
+        grid-template-columns: repeat(1, minmax(260px, 1fr));
     }
 
     .performance__card {
@@ -252,9 +300,25 @@
         font-size: 1rem;
     }
 
-    .performance__description {
-        font-size: 0.95rem;
-        text-align: -webkit-left;
+    .performance__description-columns {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .performance__column {
+        min-width: 100%;
+    }
+
+    .performances__column_description {
+        max-width: 100%;
+    }
+
+    .performance__subheader {
+        font-size: 1.1rem;
+    }
+
+    .performances__subheader_actors {
+        padding-left: 0;
     }
 
     .performance__expanded {
@@ -265,9 +329,7 @@
     }
 
     .performance__image--large {
-        max-width: 325px;
-        max-height: 425px;
-        object-fit: cover;
+        max-width: 100%;
     }
 
     .performance__close {

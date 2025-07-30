@@ -61,7 +61,7 @@
 
 .header__extras {
     display: flex;
-    gap: 16px;
+    gap: 30px;
 }
 
 .header__mobile-nav {

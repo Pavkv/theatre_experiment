@@ -1,6 +1,6 @@
 import {Link} from "react-router-dom";
 
-export default function nav({t}) {
+export default function nav({t, l}) {
     return (
         <ul className="nav">
             <li>
@@ -8,7 +8,7 @@ export default function nav({t}) {
                     to="/about"
                     className="nav__link"
                 >
-                    {t.nav.about}
+                    {t.about[l]}
                 </Link>
             </li>
             <li>
@@ -16,7 +16,7 @@ export default function nav({t}) {
                     to="/team"
                     className="nav__link"
                 >
-                    {t.nav.team}
+                    {t.team[l]}
                 </Link>
             </li>
             <li>
@@ -24,7 +24,7 @@ export default function nav({t}) {
                     to="/performances"
                     className="nav__link"
                 >
-                    {t.nav.performances}
+                    {t.performances[l]}
                 </Link>
             </li>
             <li>
@@ -32,7 +32,7 @@ export default function nav({t}) {
                     to="/media"
                     className="nav__link"
                 >
-                    {t.nav.media}
+                    {t.media[l]}
                 </Link>
             </li>
         </ul>

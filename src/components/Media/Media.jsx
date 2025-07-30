@@ -1,24 +1,26 @@
 import { useState } from "react";
 import { useLanguage } from "../../contexts/LanguageContext.jsx";
 import MediaModal from "./MediaModal.jsx";
+import {locales} from "../../utils/locales/locales.js";
 
 export default function Media({isMobile}) {
-    const { t } = useLanguage();
+    const { l } = useLanguage();
+    const t = locales.media;
     const [selectedOccasion, setSelectedOccasion] = useState("all");
     const [selectedYear, setSelectedYear] = useState("all");
     const [modalImage, setModalImage] = useState(null);
 
     const occasions = [
         "all",
-        ...new Set(t.media.gallery.map((img) => img.occasion + "s")),
+        ...new Set(t.gallery.map((img) => img.occasion + "s")),
     ];
 
     const years = [
         "all",
-        ...[...new Set(t.media.gallery.map((img) => img.year))].sort((a, b) => b - a),
+        ...[...new Set(t.gallery.map((img) => img.year))].sort((a, b) => b - a),
     ];
 
-    const filteredGallery = t.media.gallery.filter((img) => {
+    const filteredGallery = t.gallery.filter((img) => {
         const normalizedOccasion = selectedOccasion.endsWith("s")
             ? selectedOccasion.slice(0, -1)
             : selectedOccasion;
@@ -31,7 +33,7 @@ export default function Media({isMobile}) {
 
     return (
         <div className="media">
-            <h2 className="media__title">{t.media.title}</h2>
+            <h2 className="media__title">{t.title[l]}</h2>
 
             <div className="media__filters">
                 <div className="media__tabs">
@@ -41,7 +43,7 @@ export default function Media({isMobile}) {
                             className={`media__tab ${selectedOccasion === occ ? "active" : ""}`}
                             onClick={() => setSelectedOccasion(occ)}
                         >
-                            {occ === "all" ? t.media.allOccasions || "All Occasions" : occ}
+                            {occ === "all" ? t.allOccasions[l] || "All Occasions" : occ}
                         </button>
                     ))}
                 </div>
@@ -55,7 +57,7 @@ export default function Media({isMobile}) {
                             className={`media__tab ${selectedYear === yr ? "active" : ""}`}
                             onClick={() => setSelectedYear(yr)}
                         >
-                            {yr === "all" ? t.media.allYears || "All Years" : yr}
+                            {yr === "all" ? t.allYears[l] || "All Years" : yr}
                         </button>
                     ))}
                 </div>
@@ -66,7 +68,7 @@ export default function Media({isMobile}) {
                         setSelectedYear("all");
                     }}
                 >
-                    {t.media.reset || "Reset Filters"}
+                    {t.reset[l]}
                 </button>
             </div>
 
@@ -75,7 +77,7 @@ export default function Media({isMobile}) {
                     <div className="media__item" key={img.id}>
                         <img
                             src={img.url}
-                            alt={img.caption}
+                            alt={img.caption[l]}
                             className="media__image"
                             onClick={() => setModalImage(img)}
                         />

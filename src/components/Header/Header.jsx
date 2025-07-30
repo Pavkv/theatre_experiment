@@ -4,9 +4,10 @@ import Navigation from "../Navigation/Navigation.jsx";
 import SocialLinks from "../SocialLinks/SocialLinks.jsx";
 import LanguageSwitcher from "./LanguageSwitch.jsx";
 import {useLanguage} from "../../contexts/LanguageContext";
+import {locales} from "../../utils/locales/locales.js";
 
 export default function Header({isMobile, isMobileMenuOpen, toggleMobileMenu}) {
-    const {t} = useLanguage();
+    const {l} = useLanguage();
     const [scrolled, setScrolled] = useState(false);
 
     useEffect(() => {
@@ -32,7 +33,7 @@ export default function Header({isMobile, isMobileMenuOpen, toggleMobileMenu}) {
 `       }>
             <div className="header__content">
                 <Link to="/" className="header__link">
-                    <p className="header__logo">{t.logo}</p>
+                    <p className="header__logo">{locales.logo[l]}</p>
                 </Link>
 
                 {isMobile ? (
@@ -46,7 +47,7 @@ export default function Header({isMobile, isMobileMenuOpen, toggleMobileMenu}) {
                         </button>
                         {isMobileMenuOpen && (
                             <nav className={`header__mobile-nav ${isMobileMenuOpen ? 'header__mobile-nav--open' : ''}`}>
-                                <Navigation t={t} />
+                                <Navigation t={locales.nav} l={l} />
                                 <div className="header__extras">
                                     <SocialLinks />
                                     <LanguageSwitcher />
@@ -57,7 +58,7 @@ export default function Header({isMobile, isMobileMenuOpen, toggleMobileMenu}) {
                 ) : (
                     <>
                         <nav className="header__navigation">
-                            <Navigation t={t}/>
+                            <Navigation t={locales.nav} l={l}/>
                         </nav>
                         <div className="header__extras">
                             <SocialLinks/>

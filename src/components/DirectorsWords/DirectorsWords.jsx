@@ -1,7 +1,7 @@
 import {useState, useRef} from "react";
 import DisplayText from "../../utils/functions.jsx";
 
-export default function DirectorsWords({t, isMobile}) {
+export default function DirectorsWords({t, l, isMobile}) {
     const [currentIndex, setCurrentIndex] = useState(0);
     const touchStartX = useRef(null);
     const touchEndX = useRef(null);
@@ -27,11 +27,11 @@ export default function DirectorsWords({t, isMobile}) {
     };
 
     const prevSlide = () => {
-        setCurrentIndex((prev) => (prev === 0 ? t.directorsWords.length - 1 : prev - 1));
+        setCurrentIndex((prev) => (prev === 0 ? t.length - 1 : prev - 1));
     };
 
     const nextSlide = () => {
-        setCurrentIndex((prev) => (prev === t.directorsWords.length - 1 ? 0 : prev + 1));
+        setCurrentIndex((prev) => (prev === t.length - 1 ? 0 : prev + 1));
     };
 
     return (
@@ -49,16 +49,16 @@ export default function DirectorsWords({t, isMobile}) {
                     </>
                 )}
 
-                {t.directorsWords[currentIndex].quote && (
-                    <h3 className="director__quote">“{t.directorsWords[currentIndex].quote}”</h3>
+                {t[currentIndex].quote && (
+                    <h3 className="director__quote">“{t[currentIndex].quote[l]}”</h3>
                 )}
 
                 <div className="director__text">
-                    <DisplayText list={t.directorsWords[currentIndex].text} textClass={""} />
-                    {t.directorsWords[currentIndex].sign && (
+                    <DisplayText list={t[currentIndex].text[l]} textClass={""} />
+                    {t[currentIndex].sign && (
                         <div className="director__sign">
                             <DisplayText
-                                list={t.directorsWords[currentIndex].sign}
+                                list={t[currentIndex].sign[l]}
                                 textClass={"director__sign-text"}
                             />
                         </div>
@@ -66,7 +66,7 @@ export default function DirectorsWords({t, isMobile}) {
                 </div>
 
                 <div className="director__dots">
-                    {t.directorsWords.map((_, i) => (
+                    {t.map((_, i) => (
                         <span
                             key={i}
                             className={`dot ${i === currentIndex ? "active" : ""}`}

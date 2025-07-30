@@ -1,14 +1,15 @@
 import {useLanguage} from "../../contexts/LanguageContext.jsx";
+import {locales} from "../../utils/locales/locales.js";
 
 export default function Main() {
-    const {t} = useLanguage();
+    const {l} = useLanguage();
     return (
         <main className="main">
-            <h1 className="main__title">{t.main.title}</h1>
-            <p className="main__description">{t.main.description}</p>
+            <h1 className="main__title">{locales.main.title[l]}</h1>
+            <p className="main__description">{locales.main.description[l]}</p>
             <img
                 className="main__image"
-                src={new URL('../../assets/title_image.jpg', import.meta.url).href}
+                src={new URL("../../assets/title_image.jpg", import.meta.url).href}
                 alt="Theather image"
             />
         </main>

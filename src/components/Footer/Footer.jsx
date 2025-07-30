@@ -1,10 +1,11 @@
 import {useLanguage} from "../../contexts/LanguageContext.jsx";
+import {locales} from "../../utils/locales/locales.js";
 
 export default function Footer() {
-    const { t } = useLanguage();
+    const { l } = useLanguage();
     return (
         <footer className="footer">
-            <p className="footer__text">{t.footer}</p>
+            <p className="footer__text">{locales.footer[l]}</p>
         </footer>
     );
 }
