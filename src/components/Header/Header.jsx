@@ -1,5 +1,5 @@
 import {useState, useEffect} from "react";
-import {Link} from "react-router-dom";
+import {Link, useLocation} from "react-router-dom";
 import Navigation from "../Navigation/Navigation.jsx";
 import SocialLinks from "../SocialLinks/SocialLinks.jsx";
 import LanguageSwitcher from "./LanguageSwitch.jsx";
@@ -8,6 +8,7 @@ import {locales} from "../../utils/locales/locales.js";
 
 export default function Header({isMobile, isMobileMenuOpen, toggleMobileMenu}) {
     const {l} = useLanguage();
+    const location = useLocation();
     const [scrolled, setScrolled] = useState(false);
 
     useEffect(() => {
@@ -25,6 +26,12 @@ export default function Header({isMobile, isMobileMenuOpen, toggleMobileMenu}) {
 
         return () => document.body.classList.remove("menu-open");
     }, [isMobileMenuOpen]);
+
+    useEffect(() => {
+        if (isMobileMenuOpen) {
+            toggleMobileMenu(false);
+        }
+    }, [location.pathname]);
 
     return (
         <header className={`header 
@@ -47,7 +54,7 @@ export default function Header({isMobile, isMobileMenuOpen, toggleMobileMenu}) {
                         </button>
                         {isMobileMenuOpen && (
                             <nav className={`header__mobile-nav ${isMobileMenuOpen ? 'header__mobile-nav--open' : ''}`}>
-                                <Navigation t={locales.nav} l={l} />
+                                <Navigation t={locales.nav} l={l} onNavigate={() => toggleMobileMenu(false)} />
                                 <div className="header__extras">
                                     <SocialLinks />
                                     <LanguageSwitcher />
@@ -58,7 +65,7 @@ export default function Header({isMobile, isMobileMenuOpen, toggleMobileMenu}) {
                 ) : (
                     <>
                         <nav className="header__navigation">
-                            <Navigation t={locales.nav} l={l}/>
+                            <Navigation t={locales.nav} l={l} onNavigate={() => toggleMobileMenu(false)} />
                         </nav>
                         <div className="header__extras">
                             <SocialLinks/>

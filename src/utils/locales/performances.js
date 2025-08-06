@@ -277,8 +277,8 @@ export const performances = {
                 ru: "Михаил Булгаков",
             },
             date: {
-                en: "Fall 2022",
-                ru: "Осень 2022",
+                en: "Spring 2022",
+                ru: "Весна 2022",
             },
             description: {
                 en: "Description",
