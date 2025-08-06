@@ -18,6 +18,21 @@
     font-weight: 500;
 }
 
+.inline-link {
+    color: #8d0101;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    border-bottom: 1px dashed transparent;
+}
+
+.inline-link:hover,
+.inline-link:focus {
+    color: #5c0000;
+    border-bottom: 1px dashed #5c0000;
+}
+
+
 @media (max-width: 768px) {
     .bullet-list__item {
         margin: 0;

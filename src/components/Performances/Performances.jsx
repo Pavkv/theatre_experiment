@@ -1,22 +1,37 @@
 import {useEffect, useRef, useState} from "react";
-import { useLanguage } from "../../contexts/LanguageContext.jsx";
+import {useLocation, useNavigate, Link} from "react-router-dom";
+import {useLanguage} from "../../contexts/LanguageContext.jsx";
 import DisplayText from "../../utils/functions.jsx";
 import {locales} from "../../utils/locales/locales.js";
 
-export default function Performances({ isMobile }) {
-    const { l } = useLanguage();
+export default function Performances({isMobile}) {
+    const location = useLocation();
+    const navigate = useNavigate();
+    const {l} = useLanguage();
     const t = locales.performances;
-    const [expandedId, setExpandedId] = useState(null);
     const expandedRef = useRef(null);
+    const params = new URLSearchParams(location.search);
+    const performanceSlug = params.get("performance");
+
+    const initialExpanded = t.performances.find(
+        (p) => p && p.title && p.title.en && p.title[l] === performanceSlug
+    )?.id ?? null;
+
+    const [expandedId, setExpandedId] = useState(initialExpanded);
 
     useEffect(() => {
         if (expandedRef.current) {
-            expandedRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
+            expandedRef.current.scrollIntoView({behavior: "smooth", block: "start"});
         }
     }, [expandedId]);
 
     const toggleExpand = (id) => {
-        setExpandedId(expandedId === id ? null : id);
+        if (expandedId === id) {
+            setExpandedId(null);
+            navigate("/performances", {replace: true});
+        } else {
+            setExpandedId(id);
+        }
     };
 
     const renderCard = (performance) => (
@@ -41,7 +56,15 @@ export default function Performances({ isMobile }) {
             key={performance.id}
             className="performance__expanded"
             ref={expandedRef}
-            onClick={() => toggleExpand(performance.id)}
+            onClick={(e) => {
+                if (
+                    e.target.tagName === "A" ||
+                    e.target.closest("a") ||
+                    e.target.tagName === "BUTTON" ||
+                    e.target.closest("button")
+                ) return;
+                toggleExpand(performance.id);
+            }}
         >
             <img
                 src={performance.image}
@@ -56,20 +79,50 @@ export default function Performances({ isMobile }) {
                     {performance.data.description[l] && (
                         <div className="performance__description-full">
                             <h4 className="performance__subheader">{performance.description[l]}</h4>
-                            <DisplayText list={performance.data.description[l]} textClass="performance__description performances__description_justified" />
+                            <DisplayText list={performance.data.description[l]}
+                                         textClass="performance__description performances__description_justified"/>
                         </div>
                     )}
                     <div className="performance__description-columns">
-                        {performance.data.actors[l] && (
+                        {performance.data.actors?.[l] && (
                             <div className="performance__column">
                                 <h4 className="performance__subheader performances__subheader_list">{performance.actors[l]}</h4>
-                                <DisplayText list={performance.data.actors[l]} textClass="performance__description" />
+                                <div className="performance__description">
+                                    {performance.data.actors[l].map(({role, names}) => (
+                                        <div key={role}>
+                                            <strong className="performances__role">{role}</strong> —{" "}
+                                            {names.map((name, index) => (
+                                                <span key={name}>
+                                                    <Link
+                                                        className="performances__link"
+                                                        to={`/team?member=${name}`}
+                                                    >{name}</Link>
+                                                    {index < names.length - 1 ? ", " : ""}
+                                                </span>
+                                            ))}
+                                        </div>
+                                    ))}
+                                </div>
                             </div>
                         )}
-                        {performance.data.crew[l] && (
+
+                        {performance.data.crew?.[l] && (
                             <div className="performance__column">
                                 <h4 className="performance__subheader performances__subheader_list">{performance.crew[l]}</h4>
-                                <DisplayText list={performance.data.crew[l]} textClass="performance__description" />
+                                <div className="performance__description">
+                                    {performance.data.crew[l].map(({role, names}) => (
+                                        <div key={role}>
+                                            <strong className="performances__role">{role}</strong> —{" "}
+                                            {names.map((name, index) => (
+                                                <span key={name}>
+                                                    <Link to={`/team?member=${name}`}
+                                                          className="performances__link">{name}</Link>
+                                                    {index < names.length - 1 ? ", " : ""}
+                                                </span>
+                                            ))}
+                                        </div>
+                                    ))}
+                                </div>
                             </div>
                         )}
                     </div>
@@ -77,7 +130,8 @@ export default function Performances({ isMobile }) {
                 <button
                     onClick={() => toggleExpand(null)}
                     className="performance__close"
-                >×</button>
+                >×
+                </button>
             </div>
         </div>
     );

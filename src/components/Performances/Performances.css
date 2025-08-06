@@ -1,5 +1,5 @@
 .performances {
-    padding: 25px;
+    padding: 25px 84px;
     font-family: "Roboto Slab", serif;
     line-height: 1.7;
     color: #2e2e2e;
@@ -144,10 +144,30 @@
     margin: 0;
 }
 
+.performances__role {
+    color: #8d0101;
+    font-weight: 500;
+}
+
+.performances__link {
+    color: #000;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    border-bottom: 1px dashed transparent;
+}
+
+.performances__link:hover,
+.performances__link:focus {
+    color: #5c0000;
+    border-bottom: 1px dashed #5c0000;
+}
+
 .performance__expanded {
     position: relative;
     display: flex;
     gap: 40px;
+    scroll-margin-top: 200px;
     margin-bottom: 60px;
     border-width: 5px;
     padding: 30px;
@@ -247,6 +267,7 @@
         gap: 24px;
         padding: 24px;
         margin-bottom: 48px;
+        scroll-margin-top: 220px;
     }
 
     .performance__image--large {

@@ -1,5 +1,5 @@
 .team {
-    padding: 25px;
+    padding: 25px 84px;
     font-family: "Roboto Slab", serif;
     line-height: 1.7;
     color: #2e2e2e;
@@ -30,7 +30,7 @@
 
 .team__grid {
     display: grid;
-    grid-template-columns: repeat(3, minmax(260px, 1fr));
+    grid-template-columns: repeat(4, minmax(300px, 1fr));
     gap: 30px;
     justify-items: center;
 }
@@ -105,10 +105,41 @@
     margin: 5px 0;
 }
 
+.team__subheader {
+    margin: 20px 0 0;
+    color: #8d0101;
+    font-size: 1.2rem;
+}
+
+.team__performances {
+    margin: 5px 0;
+    padding: 0 20px;
+}
+
+.team__role {
+    color: #8d0101;
+    font-weight: 500;
+}
+
+.team__link {
+    color: #000;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    border-bottom: 1px dashed transparent;
+}
+
+.team__link:hover,
+.team__link:focus {
+    color: #5c0000;
+    border-bottom: 1px dashed #5c0000;
+}
+
 .team__expanded {
     position: relative;
     display: flex;
     gap: 40px;
+    scroll-margin-top: 200px;
     margin-bottom: 60px;
     border-width: 5px;
     padding: 30px;
@@ -166,6 +197,7 @@
 
     .team__grid {
         gap: 24px;
+        grid-template-columns: repeat(3, 1fr);
     }
 
     .team__card {
@@ -184,12 +216,13 @@
         flex-direction: column;
         gap: 24px;
         padding: 24px;
+        scroll-margin-top: 220px;
         margin-bottom: 48px;
     }
 
     .team__photo--large {
         aspect-ratio: auto;
-        max-width: 100%;
+        max-width: 400px;
     }
 
     .team__info {
@@ -222,6 +255,7 @@
 
     .team__grid {
         gap: 20px;
+        grid-template-columns: repeat(1, minmax(260px, 1fr));
     }
 
     .team__card {

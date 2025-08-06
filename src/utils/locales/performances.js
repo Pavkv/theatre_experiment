@@ -36,12 +36,76 @@ export const performances = {
                     ru: "Пьеса «Носорог» Эжена Ионеско является одной из ярких работ в мировой драматургии XX века. Он написал «Носорогов» как реакцию на общественные и политические трансформации своего времени. Пьеса повествует о таинственных происшествиях в небольшом городке, где жители постепенно превращаются в носорогов. Главный герой, Беранже, изначально воспринимая явление с недоверием, пытается найти логическое объяснение происходящему и сохранить свою индивидуальность в условиях общественного давления. Постепенно люди поддаются массовому влиянию, теряют свою уникальность и принимают новую форму, становясь частью коллективного «стада».Трагедия заключается в том, что герои теряют способность общаться и понимать друг друга. Невозможность найти общий язык приводит к разрушению человеческих отношений и общества в целом."
                 },
                 actors: {
-                    en: "\n• [[Berange]] - Alexander Kurapov/Ulugbek;\n• [[Dezi]] - Anastasia Frizner/Alla Foxman;\n• [[Jan]] - Yuri Maslyukov;\n• [[Dudar]] - Andrey Vovk;\n• [[Botar]] - Evgeniy Bely;\n• [[Madam Bef]] - Anna Grinfeldt;\n• [[Old Gentleman]] - Sergey Ostrovsky;\n• [[Logik]] - Evgeniy Semenov;\n• [[Monsieur Papillon]] - Konstantin Salnikov;\n• [[Housewife]] - Elena Semenova;\n• [[Shopkeeper, Cafe Owner]] - Ekaterina Goncharova;\n• [[Shopkeeper, Cafe Owner]] - Leonid Brodskiy;\n• [[Fireman/Waiter]] - Pavel Zobov;\n• [[Waitresses/Secretaries]] - Victoria Makarevich, Vera Shcherbakova, Lela Gavashvili, Anastasia Frizner;\n• [[Monsieur Jan, Neighbor]] - Alexander Grajnovskiy;\n• [[Neighbor]] - Svetlana Vasilchenko;\n• [[Citizens]] - Irina Serve-Tarnovskaya, Irina Kholodnova;\n• [[Children]] - Emma Drake, Yasha Foxman.",
-                    ru: "\n• [[Беранже]] - Александр Курапов/Улугбек;\n• [[Дези]] - Анастасия Фризнер/Алла Фоксман;\n• [[Жан]] - Юрий Маслюков;\n• [[Дюдар]] - Андрей Вовк;\n• [[Ботар]] - Евгений Белый;\n• [[Мадам Беф]] - Анна Гринфельдт;\n• [[Старый Господин]] - Сергей Островский;\n• [[Логик]] - Евгений Семенов;\n• [[Месье Папийон]] - Константин Сальников;\n• [[Домохозяйка]] - Елена Семенова;\n• [[Лавочница, Хозяйка Кафе]] - Екатерина Гончарова;\n• [[Лавочник, Хозяин Кафе]] - Леонид Бродский;\n• [[Пожарный/Официант]] - Павел Зобов;\n• [[Официантки/Секретарши]] - Виктория Макаревич, Вера Щербакова, Лела Гавашели, Анастасия Фризнер;\n• [[Месье Жан, Сосед]] - Александр Грайновский;\n• [[Соседка]] - Светлана Васильченко;\n• [[Горожане]] - Ирина Серве-Тарновская, Ирина Холоднова;\n• [[Дети]] - Эмма Дрейк, Яша Фоксман."
+                    en: [
+                        { role: "Berange", names: ["Alexander Kurapov", "Ulugbek"] },
+                        { role: "Dezi", names: ["Anastasia Frizner", "Alla Foxman"] },
+                        { role: "Jan", names: ["Yuri Maslyukov"] },
+                        { role: "Dudar", names: ["Andrey Vovk"] },
+                        { role: "Botar", names: ["Eugene Belyi"] },
+                        { role: "Madam Bef", names: ["Anna Grinfeldt"] },
+                        { role: "Old Gentleman", names: ["Sergei Ostrovski"] },
+                        { role: "Logik", names: ["Eugene Semenov"] },
+                        { role: "Monsieur Papillon", names: ["Konstantin Salnikov"] },
+                        { role: "Housewife", names: ["Elena Semenova"] },
+                        { role: "Shopkeeper Wife, Cafe Owner", names: ["Ekaterina Goncharova"] },
+                        { role: "Shopkeeper Husband, Cafe Owner", names: ["Leonid Brodskiy"] },
+                        { role: "Fireman/Waiter", names: ["Pavel Zobov"] },
+                        { role: "Waitresses/Secretaries", names: ["Viktoria Makarevich", "Vera Shcherbakova", "Lela Gavashvili", "Anastasia Frizner"] },
+                        { role: "Monsieur Jan, Neighbor", names: ["Alexander Grajnovskiy"] },
+                        { role: "Neighbor", names: ["Svetlana Vasilchenko"] },
+                        { role: "Citizens", names: ["Irina Tarnovskaya-Servais", "Irena Kholodnov"] },
+                        { role: "Children", names: ["Emma Drake", "Yasha Foxman"] }
+                    ],
+                    ru: [
+                        { role: "Беранже", names: ["Александр Курапов", "Улугбек"] },
+                        { role: "Дези", names: ["Анастасия Фризнер", "Алла Фоксман"] },
+                        { role: "Жан", names: ["Юрий Маслюков"] },
+                        { role: "Дюдар", names: ["Андрей Вовк"] },
+                        { role: "Ботар", names: ["Евгений Белый"] },
+                        { role: "Мадам Беф", names: ["Анна Гринфельдт"] },
+                        { role: "Старый Господин", names: ["Сергей Островский"] },
+                        { role: "Логик", names: ["Евгений Семёнов"] },
+                        { role: "Месье Папийон", names: ["Константин Сальников"] },
+                        { role: "Домохозяйка", names: ["Елена Семёнова"] },
+                        { role: "Лавочница, Хозяйка Кафе", names: ["Екатерина Гончарова"] },
+                        { role: "Лавочник, Хозяин Кафе", names: ["Леонид Бродский"] },
+                        { role: "Пожарный/Официант", names: ["Павел Зобов"] },
+                        { role: "Официантки/Секретарши", names: ["Виктория Макаревич", "Вера Щербакова", "Лела Гавашели", "Анастасия Фризнер"] },
+                        { role: "Месье Жан, Сосед", names: ["Александр Грайновский"] },
+                        { role: "Соседка", names: ["Светлана Васильченко"] },
+                        { role: "Горожане", names: ["Ирина Тарновская-Сервэ", "Ирена Холоднова"] },
+                        { role: "Дети", names: ["Эмма Дрейк", "Яша Фоксман"] }
+                    ]
                 },
                 crew: {
-                    en: "\n• [[Director]] - Irina Rogozina;\n• [[Administrator]] - Sergey Ostrovsky;\n• [[Set Designer]] - Katya Burova;\n• [[Composer]] - Serey Belolipetskiy;\n• [[Movement Coach]] - Natalia Mirnaya;\n• [[Head of Carpentry, Metalwork and Props Department]] - Evgeniy Semenov;\n• [[Video for the performance]] - Dana Preobrazhenskaya, Svetlana Vasilchenko, Serey Belolipetskiy;\n• [[Song Lyrics]] - Evgeniy Bely;\n• [[Sound Operator]] - Serey Belolipetskiy;\n• [[Light Operator]] - Elizaveta Yanovich;\n• [[Subtitles]] - Yana Kopylova, Anastasia Frizner, Lela Gavashvili;\n• [[Poster Design]] - Ekaterina Burova.",
-                    ru: "\n• [[Режисёр]] - Ирина Рогозина;\n• [[Директор-администратор]] - Сергей Островский;\n• [[Художник-декоратор]] - Катя Бурова;\n• [[Композитор]] - Серей Белолипецкий;\n• [[Педагог по пластике]] - Наталья Мирная;\n• [[Зав.Столярной, Слесарной и Бутафорской Частью]] - Евгений Семёнов;\n• [[Видео для спектакля]] - Дана Преображенская, Светлана Васильченко, Серей Белолипецкий;\n• [[Текст Песен]] - Евгений Белый;\n• [[Звукооператор]] - Серей Белолипецкий;\n• [[Светооператор]] - Елизавета Янович;\n• [[Субтитры]] - Яна Копылова, Анастасия Фризнер, Лела Гавашели;\n• [[Дизайн Постера]] - Екатерина Бурова."
+                    en: [
+                        { role: "Director", names: ["Irina Rogozina"] },
+                        { role: "Administrator", names: ["Sergei Ostrovski"] },
+                        { role: "Set Designer", names: ["Ekaterina Burova"] },
+                        { role: "Composer", names: ["Serey Belolipetskiy"] },
+                        { role: "Movement Coach", names: ["Natalia Mirnaya"] },
+                        { role: "Head of Carpentry, Metalwork and Props Department", names: ["Eugene Semenov"] },
+                        { role: "Video for the performance", names: ["Dana Preobrazhenskaya", "Svetlana Vasilchenko", "Serey Belolipetskiy"] },
+                        { role: "Song Lyrics", names: ["Eugene Belyi"] },
+                        { role: "Sound Operator", names: ["Serey Belolipetskiy"] },
+                        { role: "Light Operator", names: ["Elizaveta Yanovich"] },
+                        { role: "Subtitles", names: ["Yana Kopylova", "Anastasia Frizner", "Lela Gavashvili"] },
+                        { role: "Poster Design", names: ["Ekaterina Burova"] }
+                    ],
+                    ru: [
+                        { role: "Режисёр", names: ["Ирина Рогозина"] },
+                        { role: "Директор-администратор", names: ["Сергей Островский"] },
+                        { role: "Художник-декоратор", names: ["Екатерина Бурова"] },
+                        { role: "Композитор", names: ["Серей Белолипецкий"] },
+                        { role: "Педагог по пластике", names: ["Наталья Мирная"] },
+                        { role: "Зав.Столярной, Слесарной и Бутафорской Частью", names: ["Евгений Семёнов"] },
+                        { role: "Видео для спектакля", names: ["Дана Преображенская", "Светлана Васильченко", "Серей Белолипецкий"] },
+                        { role: "Текст Песен", names: ["Евгений Белый"] },
+                        { role: "Звукооператор", names: ["Серей Белолипецкий"] },
+                        { role: "Светооператор", names: ["Елизавета Янович"] },
+                        { role: "Субтитры", names: ["Яна Копылова", "Анастасия Фризнер", "Лела Гавашели"] },
+                        { role: "Дизайн Постера", names: ["Екатерина Бурова"] }
+                    ]
                 }
             },
             image: "https://res.cloudinary.com/dsxkginei/image/upload/v1753458981/Nosorog_qg6tjy.avif"
@@ -78,12 +142,84 @@ export const performances = {
                     ru: ""
                 },
                 actors: {
-                    en: "\n• [[A. Kushner \"You can’t choose times\"]] - Konstantin Salnikov;\n• [[M. Petrov \"Oh, what seas I dreamed of!\"]] - Anna Grinfeldt;\n• [[B. Okudzhava \"In our life, beautiful and strange\"]] - Irena Kholodnova;\n• [[S.Parnok \"Through the window\"]] - Elena Semenova;\n• [[A. Galich \"Psalm\"]] - Elina Zlotchenko;\n• [[S. Cherny \"Katyusha\"]] - Ekaterina Goncharova;\n• [[Yun Shu \"Tired People\"]] - Victoria Makarevich;\n• [[I. Severyanin \"Strange\" \"Overture\", \"It Could Be So\"; A. Bely \"Memory\"]] - Sasha Kurapov;\n• [[R. Rozhdestvensky \"It all starts with love\"]] - Beck;\n• [[E. Bely  \"Cogs and Shpuntik\", \"Bacchic Song\"]] - Zhenya Bely;\n• [[S. Cherny \"To the Sick\"]] - Sergey Ostrovsky & Irina Tarnovskaya;\n• Marina Zonova (acordion).\nDirector Irina Rogozina.",
-                    ru: "\n• [[А.Кушнер \"Времена не выбирают\"]] - Константин Сальников;\n• [[М. Петровых \"О, какие мне снились моря!\"]] - Анна Гринфельдт;\n• [[Б. Окуджава \"В нашей жизни, прекрасной и странной\"]] - Ирэна Холоднова;\n• [[С.Парнок \"В форточку\"]] - Елена Семенова;\n• [[А. Галич \"Псалом\"]] - Элина Злотченко;\n• [[С.Черный \"Катюша\"]] - Екатерина Гончарова;\n• [[Юн Шу \"Уставшие люди\"]] - Виктория Макаревич;\n• [[И.Северянин \"Странно\" \"Увертюра\", \"Могло быть так\"; \n• А.Белый \"Воспоминание\"]] - Саша Курапов;\n• [[Р.Рождественский \"Все начинается с любви\"]] - Бек;\n• [[Е.Белый \"Винтики и Шпунтик\", \" Вакхическая песня\"]] - Женя Белый;\n• [[С.Черный \"Больному\"]] - Сергей Островский и Ирина Тарновская;\n• Марина Зонова (акордион).\nРежиссер Ирина Рогозина."
+                    en: [
+                        { role: 'A. Kushner "You can’t choose times"', names: ['Konstantin Salnikov'] },
+                        { role: 'M. Petrov "Oh, what seas I dreamed of!"', names: ['Anna Grinfeldt'] },
+                        { role: 'B. Okudzhava "In our life, beautiful and strange"', names: ['Irena Kholodnov'] },
+                        { role: 'S. Parnok "Through the window"', names: ['Elena Semenova'] },
+                        { role: 'A. Galich "Psalm"', names: ['Elina Zlotchenko'] },
+                        { role: 'S. Cherny "Katyusha"', names: ['Ekaterina Goncharova'] },
+                        { role: 'Yun Shu "Tired People"', names: ['Viktoria Makarevich'] },
+                        { role: 'I. Severyanin "Strange", "Overture", "It Could Be So"; A. Bely "Memory"', names: ['Alexander Kurapov'] },
+                        { role: 'R. Rozhdestvensky "It all starts with love"', names: ['Beck'] },
+                        { role: 'E. Bely "Cogs and Shpuntik", "Bacchic Song"', names: ['Eugene Belyi'] },
+                        { role: 'S. Cherny "To the Sick"', names: ['Sergei Ostrovski', 'Irina Tarnovskaya-Servais'] },
+                        { role: 'Accordion', names: ['Marina Zonova'] },
+                        { role: 'Director', names: ['Irina Rogozina'] }
+                    ],
+                    ru: [
+                        { role: 'А. Кушнер "Времена не выбирают"', names: ['Константин Сальников'] },
+                        { role: 'М. Петровых "О, какие мне снились моря!"', names: ['Анна Гринфельдт'] },
+                        { role: 'Б. Окуджава "В нашей жизни, прекрасной и странной"', names: ['Ирена Холоднова'] },
+                        { role: 'С. Парнок "В форточку"', names: ['Елена Семёнова'] },
+                        { role: 'А. Галич "Псалом"', names: ['Элина Злотченко'] },
+                        { role: 'С. Черный "Катюша"', names: ['Екатерина Гончарова'] },
+                        { role: 'Юн Шу "Уставшие люди"', names: ['Виктория Макаревич'] },
+                        { role: 'И. Северянин "Странно", "Увертюра", "Могло быть так"; А. Белый "Воспоминание"', names: ['Александр Курапов'] },
+                        { role: 'Р. Рождественский "Все начинается с любви"', names: ['Бек'] },
+                        { role: 'Е. Белый "Винтики и Шпунтик", "Вакхическая песня"', names: ['Евгений Белый'] },
+                        { role: 'С. Черный "Больному"', names: ['Сергей Островский', 'Ирина Тарновская-Сервэ'] },
+                        { role: 'Аккордеон', names: ['Марина Зонова'] },
+                        { role: 'Режиссер', names: ['Ирина Рогозина'] }
+                    ]
                 },
                 crew: {
-                    en: "\n• Lisa Yanovich;\n• Anna Grinfeldt;\n• Alla Foxman;\n• Elena Semenova;\n• Ekaterina Goncharova;\n• Victoria Makarevich;\n• Irina Rogozina;\n• Yuri Maslyukov;\n• Evgeniy Semenov;\n• Zhenya Bely;\n• Sergey Ostrovsky;\n• Pavel Zobov.\nDirector Natalya Mirnaya.",
-                    ru: "\n• Лиза Янович;\n• Анна Гринфельдт;\n• Алла Фоксман;\n• Елена Семенова;\n• Екатерина Гончарова;\n• Виктория Макаревич;\n• Ирина Рогозина;\n• Юрий Маслюков;\n• Евгений Семенов;\n• Женя Белый;\n• Сергей Островский;\n• Павел Зобов.\nРежиссер Наталья Мирная."
+                    en: [
+                        {
+                            role: 'Performers',
+                            names: [
+                                'Elizaveta Yanovich',
+                                'Anna Grinfeldt',
+                                'Alla Foxman',
+                                'Elena Semenova',
+                                'Ekaterina Goncharova',
+                                'Viktoria Makarevich',
+                                'Irina Rogozina',
+                                'Yuri Maslyukov',
+                                'Eugene Semenov',
+                                'Eugene Belyi',
+                                'Sergei Ostrovski',
+                                'Pavel Zobov'
+                            ]
+                        },
+                        {
+                            role: 'Director',
+                            names: ['Natalya Mirnaya']
+                        }
+                    ],
+                    ru: [
+                        {
+                            role: 'Исполнители',
+                            names: [
+                                'Лиза Янович',
+                                'Анна Гринфельдт',
+                                'Алла Фоксман',
+                                'Елена Семёнова',
+                                'Екатерина Гончарова',
+                                'Виктория Макаревич',
+                                'Ирина Рогозина',
+                                'Юрий Маслюков',
+                                'Евгений Семёнов',
+                                'Женя Белый',
+                                'Сергей Островский',
+                                'Павел Зобов'
+                            ]
+                        },
+                        {
+                            role: 'Режиссёр',
+                            names: ['Наталья Мирная']
+                        }
+                    ]
                 }
             },
             image: "https://res.cloudinary.com/dsxkginei/image/upload/v1753278646/Poetry-Night_fu85gz.avif"
@@ -162,12 +298,98 @@ export const performances = {
                     ru: "Действие пьесы разворачивается в период НэПа, в двадцатые годы прошлого столетия в Москве. Главной героиней пьесы является Зоя Денисовна Пельц, открывшая в собственной квартире мастерскую по пошиву одежды, под прикрытием которой обустраивает дом свиданий. Изображение в пьесе квартиры является олицетворением города, такого же скандально, шумного, разъяренного, иллюзорного и лживого. Пронзительная драма в виде жутковатого балагана, финалом которого становится крах и исчезновение прежней жизни.... Ничего не напоминает? Давайте разбираться вместе! Увидимся в театре!"
                 },
                 actors: {
-                    en: "\n• [[Zoya Denisovna Peltz]] — Elizaveta Yanovich/Elena Semenova;\n• [[Pavel Fyodorovich Obolyaninov]] — Andrey Vovk;\n• [[Alexander Tarasovich Ametististov]] — Yuri Maslyukov;\n• [[Manyushka (maid)]] — Alla Foxman;\n• [[Anisim Zotikovich Alliluya]] — Evgeniy Semenov;\n• [[Gan-Dza-Lin, aka Gazolin]] — Sergey Ostrovsky;\n• [[Cherubim]] — Beck;\n• [[Alla Vadimovna]] — Anna Grinfeldt/Alexandra Frizner;\n• [[Boris Semyonovich Goose-Repairman]] — Alexander Kurapov;\n• [[Lizanka]] — Svetlana Vasilchenko;\n• [[Mymra]] — Irina Tarnovskaya;\n• [[Madam Ivanova]] — Yana Kopylova;\n• [[Robber]] — Konstantin Salnikov;\n• [[Very Responsible Agnesa Ferapontovna]] — Ekaterina Goncharova;\n• [[1st Irresponsible Lady]] — Svetlana Vasilchenko;\n• [[2nd Irresponsible Lady]] — Elena Semenova/Elizaveta Yanovich;\n• [[3rd Irresponsible Lady]] — Yana Kopylova;\n• [[Comrade Pestrokhin]] — Valentin Levin;\n• [[Responsible Lady]] — Elina Zlotchenko;\n• [[Vanechka]] — Leonid Brodskiy;\n• [[Seamstress]] — Elina Zlotchenko;\n• [[Zoya in old age]] — Irina Kholodnova;\n• [[Poet]] — Evgeniy Bely;\n• [[Smoker]] — Elena Semenova/Elizaveta Yanovich/Pavel Zobov.",
-                    ru: "\n• [[Зоя Денисовна Пельц]] —  Елизавета Янович/Елена Семёнова;\n• [[Павел Фёдорович Обольянинов]] —  Андрей Вовк;\n• [[Александр Тарасович Аметистов]] —  Юрий Маслюков;\n• [[Манюшка (горничная)]] — Алла Фоксман;\n• [[Анисим Зотикович Аллилуйя]] — Евгений Семёнов;\n• [[Ган-Дза-Лин, он же Газолин]] — Сергей Островский;\n• [[Херувим]] — Бек;\n• [[Алла Вадимовна]] — Анна Гринфельдт/Анастасия Фризнер;\n• [[Борис Семёнович Гусь-Ремонтный]] — Александр Курапов;\n• [[Лизанька]] — Светлана Васильченко;\n• [[Мымра]] — Ирина Тарновская;\n• [[Мадам Иванова]] — Яна Копылова;\n• [[Роббер]] — Константин Сальников;\n• [[Очень ответственная Агнесса Ферапонтовна]] —  Екатерина Гончарова;\n• [[1-я безответственная дама]] —  Светлана Васильченко;\n• [[2-я безответственная дама]] — Елена Семёнова/Елизавета Янович;\n• [[3-я безответственная дама]] — Яна Копылова;\n• [[Товарищ Пеструхин]] —  Валентин Левин;\n• [[Ответственная дама]] — Элина Злотченко;\n• [[Ванечка]] —  Леонид Бродский;\n• [[Швея]] —  Элина Злотченко;\n• [[Зоя в старости]] —  Ирина Холоднова;\n• [[Поэт]] —  Евгений Белый;\n• [[Курильщик]] — Елена Семёнова/Елизавета Янович/Павел Зобов."
+                    en: [
+                        { role: "Zoya Denisovna Peltz", names: ["Elizaveta Yanovich", "Elena Semenova"] },
+                        { role: "Pavel Fyodorovich Obolyaninov", names: ["Andrey Vovk"] },
+                        { role: "Alexander Tarasovich Ametististov", names: ["Yuri Maslyukov"] },
+                        { role: "Manyushka (maid)", names: ["Alla Foxman"] },
+                        { role: "Anisim Zotikovich Alliluya", names: ["Eugene Semenov"] },
+                        { role: "Gan-Dza-Lin, aka Gazolin", names: ["Sergei Ostrovski"] },
+                        { role: "Cherubim", names: ["Beck"] },
+                        { role: "Alla Vadimovna", names: ["Anna Grinfeldt", "Anastasia Frizner"] },
+                        { role: "Boris Semyonovich Goose-Repairman", names: ["Alexander Kurapov"] },
+                        { role: "Lizanka", names: ["Svetlana Vasilchenko"] },
+                        { role: "Mymra", names: ["Irina Tarnovskaya-Servais"] },
+                        { role: "Madam Ivanova", names: ["Yana Kopylova"] },
+                        { role: "Robber", names: ["Konstantin Salnikov"] },
+                        { role: "Very Responsible Agnesa Ferapontovna", names: ["Ekaterina Goncharova"] },
+                        { role: "1st Irresponsible Lady", names: ["Svetlana Vasilchenko"] },
+                        { role: "2nd Irresponsible Lady", names: ["Elena Semenova", "Elizaveta Yanovich"] },
+                        { role: "3rd Irresponsible Lady", names: ["Yana Kopylova"] },
+                        { role: "Comrade Pestrokhin", names: ["Valentin Levin"] },
+                        { role: "Responsible Lady", names: ["Elina Zlotchenko"] },
+                        { role: "Vanechka", names: ["Leonid Brodskiy"] },
+                        { role: "Unknown NKVD", names: ["Pavel Zobov"] },
+                        { role: "Seamstress", names: ["Elina Zlotchenko"] },
+                        { role: "Zoya in old age", names: ["Irena Kholodnov"] },
+                        { role: "Poet", names: ["Eugene Belyi"] },
+                        { role: "Smoker", names: ["Elena Semenova", "Elizaveta Yanovich", "Pavel Zobov"] }
+                    ],
+                    ru: [
+                        { role: "Зоя Денисовна Пельц", names: ["Елизавета Янович", "Елена Семёнова"] },
+                        { role: "Павел Фёдорович Обольянинов", names: ["Андрей Вовк"] },
+                        { role: "Александр Тарасович Аметистов", names: ["Юрий Маслюков"] },
+                        { role: "Манюшка (горничная)", names: ["Алла Фоксман"] },
+                        { role: "Анисим Зотикович Аллилуйя", names: ["Евгений Семёнов"] },
+                        { role: "Ган-Дза-Лин, он же Газолин", names: ["Сергей Островский"] },
+                        { role: "Херувим", names: ["Бек"] },
+                        { role: "Алла Вадимовна", names: ["Анна Гринфельдт", "Анастасия Фризнер"] },
+                        { role: "Борис Семёнович Гусь-Ремонтный", names: ["Александр Курапов"] },
+                        { role: "Лизанька", names: ["Светлана Васильченко"] },
+                        { role: "Мымра", names: ["Ирина Тарновская-Сервэ"] },
+                        { role: "Мадам Иванова", names: ["Яна Копылова"] },
+                        { role: "Роббер", names: ["Константин Сальников"] },
+                        { role: "Очень ответственная Агнесса Ферапонтовна", names: ["Екатерина Гончарова"] },
+                        { role: "1-я безответственная дама", names: ["Светлана Васильченко"] },
+                        { role: "2-я безответственная дама", names: ["Елена Семёнова", "Елизавета Янович"] },
+                        { role: "3-я безответственная дама", names: ["Яна Копылова"] },
+                        { role: "Товарищ Пеструхин", names: ["Валентин Левин"] },
+                        { role: "Ответственная дама", names: ["Элина Злотченко"] },
+                        { role: "Ванечка", names: ["Леонид Бродский"] },
+                        { role: "Неизвестный НКВД", names: ["Павел Зобов"] },
+                        { role: "Швея", names: ["Элина Злотченко"] },
+                        { role: "Зоя в старости", names: ["Ирена Холоднова"] },
+                        { role: "Поэт", names: ["Евгений Белый"] },
+                        { role: "Курильщик", names: ["Елена Семёнова", "Елизавета Янович", "Павел Зобов"] }
+                    ]
                 },
                 crew: {
-                    en: "\n• [[Director]] - Irina Rogozina;\n• [[Scenographer, Artist, Decorator]] – Katya Burova;\n• [[Costumes]] – Irina Rogozina;\n• [[Seamstress]] – Inna Belaya;\n• [[Decoration (manufacturing)]] – Evgeny Semenov;\n• [[Assistance in making decorations]]: K. Burova, S. Vasilchenko, E.Vasilchenko, Bek, A. Vovk, E. Semenova, I. Rogozina;\n• [[Musical design]] – Irina Rogozina;\n• [[Video/Photo]] – Svetlana Vasilchenko;\n• [[Lighting Designer]] – Dana Preobrazhenskaya;\n• [[Video Announcements]] – Dana Preobrazhenskaya;\n• [[Program Design]] – Varvara Bukharina;\n• [[Artist]] – Elena Chernomazova;\n• [[Subtitles]] – Yana Kopylova, Dana Preobrazhenskaya, Alexander Kovalev;\n• [[Contract with the theater]] – Elizaveta Yanovich;\n• [[Translation]] – Irina Tarnovskaya-Serve;\n• [[Administrative work]] – Ekaterina Goncharova, Maria Getakhuny.",
-                    ru: "\n• [[Режиссёр]] - Irina Rogozina;\n• [[Сценограф, художник, декоратор]] – Катя Бурова;\n• [[Костюмы]] – Ирина Рогозина;\n• [[Швея]] – Инна Белая;\n• [[Декорация (изготовление)]] – Eвгений Семёнов;\n• [[Помощь в изготовлении декораций]]: К. Бурова, С. Васильченко, Е.Васильченко, Бек, А. Вовк, E. Семёнова, И. Рогозина;\n• [[Музыкальное оформление]] – Ирина Рогозина;\n• [[Видео/фото]] – Светлана Васильченко;\n• [[Художник по свету]] – Дана Преображенская;\n• [[Видео анонсы]] – Дана Преображенская;\n• [[Дизайн программки]] – Варвара Бухарина;\n• [[Художник]] – Елена Черномазова;\n• [[Субтитры]] – Яна Копылова, Дана Преображенская, Александр Ковалёв;\n• [[Договор с театром]] – Елизавета Янович;\n• [[Перевод]] – Ирина Тарновская-Серве;\n• [[Административная работа]] – Eкатерина Гончарова, Мария Гетахуню"
+                    en: [
+                        { role: "Director", names: ["Irina Rogozina"] },
+                        { role: "Scenographer, Artist, Decorator", names: ["Ekaterina Burova"] },
+                        { role: "Costumes", names: ["Irina Rogozina"] },
+                        { role: "Seamstress", names: ["Inna Belaya"] },
+                        { role: "Decoration (manufacturing)", names: ["Eugene Semenov"] },
+                        { role: "Assistance in making decorations", names: ["K. Burova", "S. Vasilchenko", "E. Vasilchenko", "Bek", "A. Vovk", "E. Semenova", "I. Rogozina"] },
+                        { role: "Musical design", names: ["Irina Rogozina"] },
+                        { role: "Video/Photo", names: ["Svetlana Vasilchenko"] },
+                        { role: "Lighting Designer", names: ["Dana Preobrazhenskaya"] },
+                        { role: "Video Announcements", names: ["Dana Preobrazhenskaya"] },
+                        { role: "Program Design", names: ["Varvara Bukharina"] },
+                        { role: "Artist", names: ["Elena Chernomazova"] },
+                        { role: "Subtitles", names: ["Yana Kopylova", "Dana Preobrazhenskaya", "Alexander Kovalev"] },
+                        { role: "Contract with the theater", names: ["Elizaveta Yanovich"] },
+                        { role: "Translation", names: ["Irina Tarnovskaya-Servais"] },
+                        { role: "Administrative work", names: ["Ekaterina Goncharova", "Maria Getakhuny"] }
+                    ],
+                    ru: [
+                        { role: "Режиссёр", names: ["Ирина Рогозина"] },
+                        { role: "Сценограф, художник, декоратор", names: ["Екатерина Бурова"] },
+                        { role: "Костюмы", names: ["Ирина Рогозина"] },
+                        { role: "Швея", names: ["Инна Белая"] },
+                        { role: "Декорация (изготовление)", names: ["Евгений Семёнов"] },
+                        { role: "Помощь в изготовлении декораций", names: ["К. Бурова", "С. Васильченко", "Е. Васильченко", "Бек", "А. Вовк", "Е. Семёнова", "И. Рогозина"] },
+                        { role: "Музыкальное оформление", names: ["Ирина Рогозина"] },
+                        { role: "Видео/фото", names: ["Светлана Васильченко"] },
+                        { role: "Художник по свету", names: ["Дана Преображенская"] },
+                        { role: "Видео анонсы", names: ["Дана Преображенская"] },
+                        { role: "Дизайн программки", names: ["Варвара Бухарина"] },
+                        { role: "Художник", names: ["Елена Черномазова"] },
+                        { role: "Субтитры", names: ["Яна Копылова", "Дана Преображенская", "Александр Ковалёв"] },
+                        { role: "Договор с театром", names: ["Елизавета Янович"] },
+                        { role: "Перевод", names: ["Ирина Тарновская-Сервэ"] },
+                        { role: "Административная работа", names: ["Екатерина Гончарова", "Мария Гетахуню"] }
+                    ]
                 }
             },
             image: "https://res.cloudinary.com/dsxkginei/image/upload/v1753278646/Zoyas_Apartment_xwwdwr.avif"
@@ -204,12 +426,46 @@ export const performances = {
                     ru: "Это вполне современная история с широким диапазоном красок, там есть юмор, почти клоунский, и глубокий драматизм – там затронуты и подняты такие вопросы, которые и в \"нынешнее время\" звучат современно и злободневно.\nВспоминая слова Маяковского: \"Театр не есть зеркало, а \"увеличивающее стекло\". Театр всегда должен оставаться театром, а не подменять жизнь, которую он призван отражать.\""
                 },
                 actors: {
-                    en: "\n• [[Lidia]] - Irina Ibragimova;\n• [[Vasilkov]] - Evgueniy Beliy/Eugene Semenov;\n• [[Cheboksarova]] - Elena Semenova;\n• [[Kuchumov]] - Sergey Ostrovsky;\n• [[Glumov]]- Garik Polyakov;\n• [[Telyatev]] - Nikolai Zapisochniy;\n• [[Andrey]] - Eugene Semenov/Evgueniy Beliy;\n• [[Ladies]] - Svetlana Vasilchenko, Julia Volardi, Maria Getahun, Irina Kholodnova;\n• [[Waiter, Bailiff]] - Andrey Vovk",
-                    ru: "\n• [[Лидия]] - Ирина Ибрагимова;\n• [[Васильков]] - Евгений Белый/Евгений Семёнов;\n• [[Чебоксарова]] - Елена Семёнова;\n• [[Кучумов]] - Сергей Островский;\n• [[Глумов]]- Гарик Поляков;\n• [[Телятев]] - Николай Записочный;\n• [[Андрей]] - Евгений Семёнов/Евгений Белый;\n• [[Дамы]] - Светлана Васильченко, Юлия Воларди, Мария Гетахун, Ирина Холоднова;\n• [[Официант, судебный пристав]] - Андрей Вовк."
+                    en: [
+                        { role: "Lidia", names: ["Irina Ibragimova"] },
+                        { role: "Vasilkov", names: ["Eugene Belyi", "Eugene Semenov"] },
+                        { role: "Cheboksarova", names: ["Elena Semenova"] },
+                        { role: "Kuchumov", names: ["Sergei Ostrovski"] },
+                        { role: "Glumov", names: ["Garik Polyakov"] },
+                        { role: "Telyatev", names: ["Nikolai Zapisochniy"] },
+                        { role: "Andrey", names: ["Eugene Semenov", "Eugene Belyi"] },
+                        { role: "Ladies", names: ["Svetlana Vasilchenko", "Julia Volardi", "Maria Getahun", "Irena Kholodnov"] },
+                        { role: "Waiter, Bailiff", names: ["Andrey Vovk"] }
+                    ],
+                    ru: [
+                        { role: "Лидия", names: ["Ирина Ибрагимова"] },
+                        { role: "Васильков", names: ["Евгений Белый", "Евгений Семёнов"] },
+                        { role: "Чебоксарова", names: ["Елена Семёнова"] },
+                        { role: "Кучумов", names: ["Сергей Островский"] },
+                        { role: "Глумов", names: ["Гарик Поляков"] },
+                        { role: "Телятев", names: ["Николай Записочный"] },
+                        { role: "Андрей", names: ["Евгений Семёнов", "Евгений Белый"] },
+                        { role: "Дамы", names: ["Светлана Васильченко", "Юлия Воларди", "Мария Гетахун", "Ирена Холоднова"] },
+                        { role: "Официант, судебный пристав", names: ["Андрей Вовк"] }
+                    ]
                 },
                 crew: {
-                    en: "\n• [[Stage Director]] - Irina Rogozina;\n• [[Designer]] - Ekaterina Burova;\n• [[Video]] - Dmitry Shakhov;\n• [[Music Arrangement]] - Alexander Nikitin;\n• [[Movement Instructor]] - Natasha Mirnaya;\n• [[Technical Crew]] - Liza Yanovich",
-                    ru: "\n• [[Режиссёр-постановщик]] - Ирина Рогозина;\n• [[Художник]] - Екатерина Бурова;\n• [[Видео]] - Дмитрий Шахов;\n• [[Музыкальное оформление]] - Александр Никитин;\n• [[Педагог по пластике]] - Наташа Мирная;\n• [[Техническая группа]] - Лиза Янович."
+                    en: [
+                        { role: "Stage Director", names: ["Irina Rogozina"] },
+                        { role: "Designer", names: ["Ekaterina Burova"] },
+                        { role: "Video", names: ["Dmitry Shakhov"] },
+                        { role: "Music Arrangement", names: ["Alexander Nikitin"] },
+                        { role: "Movement Instructor", names: ["Natasha Mirnaya"] },
+                        { role: "Technical Crew", names: ["Liza Yanovich"] }
+                    ],
+                    ru: [
+                        { role: "Режиссёр-постановщик", names: ["Ирина Рогозина"] },
+                        { role: "Художник", names: ["Екатерина Бурова"] },
+                        { role: "Видео", names: ["Дмитрий Шахов"] },
+                        { role: "Музыкальное оформление", names: ["Александр Никитин"] },
+                        { role: "Педагог по пластике", names: ["Наташа Мирная"] },
+                        { role: "Техническая группа", names: ["Лиза Янович"] }
+                    ]
                 }
             },
             image: "https://res.cloudinary.com/dsxkginei/image/upload/v1753585947/Money_To_Burn_kgrxy4.avif"
@@ -246,12 +502,52 @@ export const performances = {
                     ru: "Наш спектакль не о плохих людях, а об одиночестве, о комплексах и человеческих страхах, которые мешают людям быть настоящими, а не носить маски. Спектакль о поиске личного счастья о мечте, которой не суждено сбыться."
                 },
                 actors: {
-                    en: "\n• [[Podkolyosin, a clerk]] - Alexander Kurapov;\n• [[Agafya Tikhonovna, a merchant's daughter]] - Elizaveta Yanovich;\n• [[Ariana Panteleimonovna, aunt]] - Elena Semenova;\n• [[Fekla Ivanovna, matchmaker]] - Natalia Leonova;\n• [[Podkolyosin, court counselor]] - Yuri Maslyukov;\n• [[Kochkarev, his friend]] - Ilya Sviridyuk/Evgeniy Bely;\n• [[Yayichnitsa, executor]] - Alexander Grajnovskiy;\n• [[Anuchkin, retired infantry officer]] - Garik Polyakov;\n• [[Zhevakyn, sailor]] - Leonid Brodskiy/Sergey Ostrovsky;\n• [[Dunyasha]] - Irina Ibragimova;\n• [[Starikov, guesthouse owner]] - Evgeniy Semenov;\n• [[Stepan, Podkolyosin's servant]] - Evgeniy Semenov/Evgeniy Bely;\n• [[Dream Woman]] - Svetlana Vasilchenko.",
-                    ru: "\n• [[Агафья Тихоновна, купеческая дочь]] - Елизавета Янович;\n• [[Арина Пантелеймоновна, тетка]] - Елена Семёнова;\n• [[Фекла Ивановна, сваха]] - Наталья Леонова;\n• [[Подколесин, служащий надворный советник]] - Юрий Маслюков;\n• [[Кочкарев, друг его]] - Илья Свиридюк/Евгений Белый;\n• [[Яичница, экзекутор]] - Александр Грайновский;\n• [[Анучкин, отставной пехотный офицер]] - Гарик Поляков;\n• [[Жевакин, моряк]] - Леонид Бродский/Сергей Островский;\n• [[Дуняша]] - Ирина Ибрагимова;\n• [[Стариков, гостинодворец]] - Евгений Семенов;\n• [[Степан, слуга Подколесина]] - Евгений Семенов/Евгений Белый;\n• [[Женщина-мечта]] - Светлана Васильченко."
+                    en: [
+                        { role: "Podkolyosin, a clerk", names: ["Alexander Kurapov"] },
+                        { role: "Agafya Tikhonovna, a merchant's daughter", names: ["Elizaveta Yanovich"] },
+                        { role: "Ariana Panteleimonovna, aunt", names: ["Elena Semenova"] },
+                        { role: "Fekla Ivanovna, matchmaker", names: ["Natalia Leonova"] },
+                        { role: "Podkolyosin, court counselor", names: ["Yuri Maslyukov"] },
+                        { role: "Kochkarev, his friend", names: ["Ilya Sviridyuk", "Eugene Belyi"] },
+                        { role: "Yayichnitsa, executor", names: ["Alexander Grajnovskiy"] },
+                        { role: "Anuchkin, retired infantry officer", names: ["Garik Polyakov"] },
+                        { role: "Zhevakyn, sailor", names: ["Leonid Brodskiy", "Sergei Ostrovski"] },
+                        { role: "Dunyasha", names: ["Irina Ibragimova"] },
+                        { role: "Starikov, guesthouse owner", names: ["Eugene Semenov"] },
+                        { role: "Stepan, Podkolyosin's servant", names: ["Eugene Semenov", "Eugene Belyi"] },
+                        { role: "Dream Woman", names: ["Svetlana Vasilchenko"] }
+                    ],
+                    ru: [
+                        { role: "Подколесин, чиновник", names: ["Александр Курапов"] },
+                        { role: "Агафья Тихоновна, купеческая дочь", names: ["Елизавета Янович"] },
+                        { role: "Арина Пантелеймоновна, тетка", names: ["Елена Семёнова"] },
+                        { role: "Фекла Ивановна, сваха", names: ["Наталья Леонова"] },
+                        { role: "Подколесин, служащий надворный советник", names: ["Юрий Маслюков"] },
+                        { role: "Кочкарев, друг его", names: ["Илья Свиридюк", "Евгений Белый"] },
+                        { role: "Яичница, экзекутор", names: ["Александр Грайновский"] },
+                        { role: "Анучкин, отставной пехотный офицер", names: ["Гарик Поляков"] },
+                        { role: "Жевакин, моряк", names: ["Леонид Бродский", "Сергей Островский"] },
+                        { role: "Дуняша", names: ["Ирина Ибрагимова"] },
+                        { role: "Стариков, гостинодворец", names: ["Евгений Семёнов"] },
+                        { role: "Степан, слуга Подколесина", names: ["Евгений Семёнов", "Евгений Белый"] },
+                        { role: "Женщина-мечта", names: ["Светлана Васильченко"] }
+                    ]
                 },
                 crew: {
-                    en: "\n• [[Stage Director]] - Irina Rogozina;\n• [[Designer]] - Ekaterina Burova;\n• [[Filming]] - Dana Preobrazhenskaya;\n• [[Music Arrangement]] - Alexander Nikitin;\n• [[Movement Instructor]] - Lyubov Putilova.",
-                    ru: "\n• [[Режиссёр-постановщик]] - Ирина Рогозина;\n• [[Художник]] - Екатерина Бурова;\n• [[Видео]] - Дана Преображенская;\n• [[Музыкальное оформление]] - Александр Никитин;\n• [[Педагог по пластике]] - Любовь Путилова."
+                    en: [
+                        { role: "Stage Director", names: ["Irina Rogozina"] },
+                        { role: "Designer", names: ["Ekaterina Burova"] },
+                        { role: "Filming", names: ["Dana Preobrazhenskaya"] },
+                        { role: "Music Arrangement", names: ["Alexander Nikitin"] },
+                        { role: "Movement Instructor", names: ["Lyubov Putilova"] }
+                    ],
+                    ru: [
+                        { role: "Режиссёр-постановщик", names: ["Ирина Рогозина"] },
+                        { role: "Художник", names: ["Екатерина Бурова"] },
+                        { role: "Видео", names: ["Дана Преображенская"] },
+                        { role: "Музыкальное оформление", names: ["Александр Никитин"] },
+                        { role: "Педагог по пластике", names: ["Любовь Путилова"] }
+                    ]
                 }
             },
             image: "https://res.cloudinary.com/dsxkginei/image/upload/v1753807307/Marriage_mcppyg.avif"
@@ -288,12 +584,46 @@ export const performances = {
                     ru: "В постановке есть элементы гротеска, но в целом это можно назвать классической постановкой, где зритель следит за судьбами персонажей и может идентифицировать себя с ситуацией на сцене. А здесь в центре - не только вопросы памяти и прошлого, но вопросы сложности семейных отношений, то что всем очень близко. Жан Ануй сам очень переживал из-за неоднозначности отношений в своей семье. Первая жена Ануя, актриса по фамилии Валентин, ему изменяла, отчего брак в конце концов распался. Кстати одна из героинь в пьесе носит такое же имя. Сам Ануй, будучи уже в зрелом возрасте, узнал, что был зачат любовником своей матери, то есть отец Ануя не являлся его биологическим отцом. Вся эта внутренняя и внешняя неустроенность явно беспокоила Ануя, когда он писал свою пьесу."
                 },
                 actors: {
-                    en: "\n• [[Gaston]] - Garik Polyakov;\n• [[Duchess DuPont Dufour]] - Julia Tevelow;\n• [[Ms. Renault]] - Natalia Leonova;\n• [[Valentina Renault]] - Elena Semenova;\n• [[Managing]] - Sergey Ostrovsky;\n• [[Georges Renault]] - Evgueniy Beliy;\n• [[Mr Pikvik, Lakey]] - Ilya Sviridyuk;\n• [[Juliet]] - Irina Ibragimova;\n• [[Driver]] - Eugene Semenov;\n• [[Kukharka]] - Larisa Moiseyeva;\n• [[Boy]] - Leonard Polyakov.",
-                    ru: "\n• [[Гастон]] - Гарик Поляков;\n• [[Герцогиня Дюпон Дюфур]] - Юлия Тевелоу;\n• [[Мадам Рено]] - Наталья Леонова;\n• [[Валентина Рено]] - Елена Семёнова;\n• [[Управляющий]] - Сергей Островский;\n• [[Жорж Рено]] - Евгений Белый;\n• [[Месье Пиквик, лакей]] - Илья Свиридюк;\n• [[Джульетта]] - Ирина Ибрагимова;\n• [[Шофёр]] - Евгений Семёнов;\n• [[Кухарка]] - Лариса Моисеева;\n• [[Мальчик]] - Леонард Поляков."
+                    en: [
+                        { role: "Gaston", names: ["Garik Polyakov"] },
+                        { role: "Duchess DuPont Dufour", names: ["Julia Tevelow"] },
+                        { role: "Ms. Renault", names: ["Natalia Leonova"] },
+                        { role: "Valentina Renault", names: ["Elena Semenova"] },
+                        { role: "Managing", names: ["Sergei Ostrovski"] },
+                        { role: "Georges Renault", names: ["Eugene Belyi"] },
+                        { role: "Mr Pikvik, Lakey", names: ["Ilya Sviridyuk"] },
+                        { role: "Juliet", names: ["Irina Ibragimova"] },
+                        { role: "Driver", names: ["Eugene Semenov"] },
+                        { role: "Kukharka", names: ["Larisa Moiseyeva"] },
+                        { role: "Boy", names: ["Leonard Polyakov"] }
+                    ],
+                    ru: [
+                        { role: "Гастон", names: ["Гарик Поляков"] },
+                        { role: "Герцогиня Дюпон Дюфур", names: ["Юлия Тевелоу"] },
+                        { role: "Мадам Рено", names: ["Наталья Леонова"] },
+                        { role: "Валентина Рено", names: ["Елена Семёнова"] },
+                        { role: "Управляющий", names: ["Сергей Островский"] },
+                        { role: "Жорж Рено", names: ["Евгений Белый"] },
+                        { role: "Месье Пиквик, лакей", names: ["Илья Свиридюк"] },
+                        { role: "Джульетта", names: ["Ирина Ибрагимова"] },
+                        { role: "Шофёр", names: ["Евгений Семёнов"] },
+                        { role: "Кухарка", names: ["Лариса Моисеева"] },
+                        { role: "Мальчик", names: ["Леонард Поляков"] }
+                    ]
                 },
                 crew: {
-                    en: "\n• [[Stage Director]] - Dmitry Shakhov;\n• [[Decorator]] - Ekaterina Burova;\n• [[Sound Director]] - Alexander Nikitin;\n• [[Project Idea]] - Garik Polyakov.",
-                    ru: "\n• [[Режиссёр-постановщик]] - Дмитрий Шахов;\n• [[Художник-декоратор]] - Екатерина Бурова;\n• [[Звуковой режиссёр]] - Александр Никитин;\n• [[Идея проекта]] - Гарик Поляков."
+                    en: [
+                        { role: "Stage Director", names: ["Dmitry Shakhov"] },
+                        { role: "Decorator", names: ["Ekaterina Burova"] },
+                        { role: "Sound Director", names: ["Alexander Nikitin"] },
+                        { role: "Project Idea", names: ["Garik Polyakov"] }
+                    ],
+                    ru: [
+                        { role: "Режиссёр-постановщик", names: ["Дмитрий Шахов"] },
+                        { role: "Художник-декоратор", names: ["Екатерина Бурова"] },
+                        { role: "Звуковой режиссёр", names: ["Александр Никитин"] },
+                        { role: "Идея проекта", names: ["Гарик Поляков"] }
+                    ]
                 }
             },
             image: "https://res.cloudinary.com/dsxkginei/image/upload/v1753809743/Passenger_without_luggage_tmvofc.avif"
@@ -330,12 +660,32 @@ export const performances = {
                     ru: "Пьеса Зима принесла автору премию Анти-Букер в 1999 году. Один из участников жюри тогда сказал: [[\"Я вижу современника, который обращается ко мне напрямую. Не через залп \"Авроры\", не через что-то еще, а именно напрямую...  Я читаю это и понимаю, что читаю о себе. И это написано обо мне\"]]"
                 },
                 actors: {
-                    en: "\n• Gabriella Tulchinskaya;\n• Alexander Tulchinsky;\n• Dmitry Shakhov.",
-                    ru: "\n• Габриэлла Тульчинская;\n• Александр Тульчинский;\n• Дмитрий Шахов."
+                    en: [
+                        { role: null, names: ["Gabriella Tulchinskaya"] },
+                        { role: null, names: ["Alexander Tulchinsky"] },
+                        { role: null, names: ["Dmitry Shakhov"] }
+                    ],
+                    ru: [
+                        { role: null, names: ["Габриэлла Тульчинская"] },
+                        { role: null, names: ["Александр Тульчинский"] },
+                        { role: null, names: ["Дмитрий Шахов"] }
+                    ]
                 },
                 crew: {
-                    en: "\n• [[Director]] - Irina Rogozina;\n• [[Designer]] - Ekaterina Burova;\n• [[Video]] - Dana Preobrazhenskaya;\n• [[Music Arrangement]] - Alexander Nikitin;\n• [[Movement Instructor]] - Lyubov Putilova.",
-                    ru: "\n• [[Режиссёр-постановщик]] - Ирина Рогозина;\n• [[Художник]] - Екатерина Бурова;\n• [[Видео]] - Дана Преображенская;\n• [[Музыкальное оформление]] - Александр Никитин;\n• [[Педагог по пластике]] - Любовь Путилова."
+                    en: [
+                        { role: "Director", names: ["Irina Rogozina"] },
+                        { role: "Designer", names: ["Ekaterina Burova"] },
+                        { role: "Video", names: ["Dana Preobrazhenskaya"] },
+                        { role: "Music Arrangement", names: ["Alexander Nikitin"] },
+                        { role: "Movement Instructor", names: ["Lyubov Putilova"] }
+                    ],
+                    ru: [
+                        { role: "Режиссёр-постановщик", names: ["Ирина Рогозина"] },
+                        { role: "Художник", names: ["Екатерина Бурова"] },
+                        { role: "Видео", names: ["Дана Преображенская"] },
+                        { role: "Музыкальное оформление", names: ["Александр Никитин"] },
+                        { role: "Педагог по пластике", names: ["Любовь Путилова"] }
+                    ]
                 }
             },
             image: "https://res.cloudinary.com/dsxkginei/image/upload/v1753807847/Winter_msvjc3.avif"
@@ -372,12 +722,44 @@ export const performances = {
                     ru: "\"Чайка\" была первой большой пьесой Чехова, принесшей ему шумный успех.  По словам Горького, жизнь, описываемая Чеховым в \"Чайке\", поднялась на новую высоту  до \"одухотворенного и глубоко продуманного символа\". Пьеса стала первым классическим произведением, взятым для переосмысливания и современного воплощения в нашем театре. Она представлена как психологическая драма, в которой все герои ощущают постоянную неудовлетворенность и не могут найти успокоения на фоне таинственности жизни и сокрытости от них смысла и причины их бытия."
                 },
                 actors: {
-                    en: "\n• [[Irina Nikolaevna Arkadina]] - Irina Rogozina;\n• [[Konstantin Gavrilovich Treplev]] - Garik Polyakov;\n• [[Petr Nikolaevich Sorin]] - Sergey Ostrovsky;\n• [[Nina Zarechnaya]] - Elizaveta Yanovich;\n• [[Ilya Afanasevich Shamraev]] - Leonid Brodskiy;\n• [[Polina Andreevna]] - Irina Shakhova;\n• Masha - Anna Chulyukina;\n• [[Boris Alekseevich Trigorin]] - Dmitry Savransky;\n• [[Evgeny Sergeevich Dorn]] - Alexander Grainovsky;\n• [[Semen Semenovich Medvedenko]] - Yuri Maslyukov;\n• [[Jacob]] - Evgueniy Beliy.",
-                    ru: "\n• [[Ирина Николаевна Аркадина]] - Ирина Рогозина;\n• [[Константин Гаврилович Треплев]] - Гарик Поляков;\n• [[Петр Николаевич Сорин]] - Сергей Островский;\n• [[Нина Заречная]] - Елизавета Янович;\n• [[Илья Афанасьевич Шамраев]] - Леонид Бродский;\n• [[Полина Андреевна]] - Ирина Шахова;\n• Маша - Анна Чулюкина;\n• [[Борис Алексеевич Тригорин]] - Дмитрий Савранский;\n• [[Евгений Сергеевич Дорн]] - Александр Грайновский;\n• [[Семен Семенович Медведенко]] - Юрий Маслюков;\n• [[Яков]] - Евгений Белый."
+                    en: [
+                        { role: "Irina Nikolaevna Arkadina", names: ["Irina Rogozina"] },
+                        { role: "Konstantin Gavrilovich Treplev", names: ["Garik Polyakov"] },
+                        { role: "Petr Nikolaevich Sorin", names: ["Sergei Ostrovski"] },
+                        { role: "Nina Zarechnaya", names: ["Elizaveta Yanovich"] },
+                        { role: "Ilya Afanasevich Shamraev", names: ["Leonid Brodskiy"] },
+                        { role: "Polina Andreevna", names: ["Irina Shakhova"] },
+                        { role: "Masha", names: ["Anna Chulyukina"] },
+                        { role: "Boris Alekseevich Trigorin", names: ["Dmitry Savransky"] },
+                        { role: "Evgeny Sergeevich Dorn", names: ["Alexander Grajnovskiy"] },
+                        { role: "Semen Semenovich Medvedenko", names: ["Yuri Maslyukov"] },
+                        { role: "Jacob", names: ["Eugene Belyi"] }
+                    ],
+                    ru: [
+                        { role: "Ирина Николаевна Аркадина", names: ["Ирина Рогозина"] },
+                        { role: "Константин Гаврилович Треплев", names: ["Гарик Поляков"] },
+                        { role: "Петр Николаевич Сорин", names: ["Сергей Островский"] },
+                        { role: "Нина Заречная", names: ["Елизавета Янович"] },
+                        { role: "Илья Афанасьевич Шамраев", names: ["Леонид Бродский"] },
+                        { role: "Полина Андреевна", names: ["Ирина Шахова"] },
+                        { role: "Маша", names: ["Анна Чулюкина"] },
+                        { role: "Борис Алексеевич Тригорин", names: ["Дмитрий Савранский"] },
+                        { role: "Евгений Сергеевич Дорн", names: ["Александр Грайновский"] },
+                        { role: "Семен Семёнович Медведенко", names: ["Юрий Маслюков"] },
+                        { role: "Яков", names: ["Евгений Белый"] }
+                    ]
                 },
                 crew: {
-                    en: "\n• [[Stage Director]] - Irina Rogozina;\n• [[Sound Operator]] - Yuri Shakhov;\n• [[Director]] - Dmitry Shakhov.",
-                    ru: "\n• [[Режиссёр-постановщик]] - Ирина Рогозина;\n• [[Звукооператор]] - Юрий Шахов;\n• [[Режиссёр]] - Дмитрий Шахов."
+                    en: [
+                        { role: "Stage Director", names: ["Irina Rogozina"] },
+                        { role: "Sound Operator", names: ["Yuri Shakhov"] },
+                        { role: "Director", names: ["Dmitry Shakhov"] }
+                    ],
+                    ru: [
+                        { role: "Режиссёр-постановщик", names: ["Ирина Рогозина"] },
+                        { role: "Звукооператор", names: ["Юрий Шахов"] },
+                        { role: "Режиссёр", names: ["Дмитрий Шахов"] }
+                    ]
                 }
             },
             image: "https://res.cloudinary.com/dsxkginei/image/upload/v1753811471/Seagull_wo5qdd.avif"
@@ -414,12 +796,44 @@ export const performances = {
                     ru: ""
                 },
                 actors: {
-                    en: "\n• [[Mistress, Businesswoman, Blind]] - Gabi Tulchinskaya;\n• [[Newlywed, Pregnant]] - Maya Tsidulko;\n• [[Wife, Old Woman]] - Marina Tsidulko;\n• [[Unknown]] - Leonid Brodsky;\n• [[Deputy, Director]] - Sergey Ostrovsky;\n• [[Husband, 1st Carrier]] - Gennady Gololobov;\n• [[Militia Sergeant, Carrier Foreman, Old Man]] - Alexander Grainovsky;\n• [[1st Bandit, Forwarder]] - Yuri Maslyukov;\n• [[2nd Bandit, Newlywed, Bodyguard]] - Leonid Sapronov;\n• [[Lover, Policeman Trainee, 2nd Carrier]] - Alexander Tulchinsky.",
-                    ru: "\n• [[Хозяйка, бизнесвумен, слепая]] - Габи Тульчинская;\n• [[Новобрачная, беременная]] - Майя Цидулько;\n• [[Жена, старая женщина]] - Марина Цидулько;\n• [[Незнакомец]] - Леонид Бродский;\n• [[Заместитель, директор]] - Сергей Островский;\n• [[Муж, 1-й перевозчик]] - Геннадий Гололобов;\n• [[Сержант милиции, бригадир перевозчиков, старик]] - Александр Грайновский;\n• [[1-й бандит, экспедитор]] - Юрий Маслюков;\n• [[2-й бандит, новобрачный, телохранитель]] - Леонид Сапронов;\n• [[Любовник, стажёр милиции, 2-й перевозчик]] - Александр Тульчинский."
+                    en: [
+                        { role: "Mistress, Businesswoman, Blind", names: ["Gabi Tulchinskaya"] },
+                        { role: "Newlywed, Pregnant", names: ["Maya Tsidulko"] },
+                        { role: "Wife, Old Woman", names: ["Marina Tsidulko"] },
+                        { role: "Unknown", names: ["Leonid Brodskiy"] },
+                        { role: "Deputy, Director", names: ["Sergei Ostrovski"] },
+                        { role: "Husband, 1st Carrier", names: ["Gennady Gololobov"] },
+                        { role: "Militia Sergeant, Carrier Foreman, Old Man", names: ["Alexander Grajnovskiy"] },
+                        { role: "1st Bandit, Forwarder", names: ["Yuri Maslyukov"] },
+                        { role: "2nd Bandit, Newlywed, Bodyguard", names: ["Leonid Sapronov"] },
+                        { role: "Lover, Policeman Trainee, 2nd Carrier", names: ["Alexander Tulchinsky"] }
+                    ],
+                    ru: [
+                        { role: "Хозяйка, бизнесвумен, слепая", names: ["Габи Тульчинская"] },
+                        { role: "Новобрачная, беременная", names: ["Майя Цидулько"] },
+                        { role: "Жена, старая женщина", names: ["Марина Цидулько"] },
+                        { role: "Незнакомец", names: ["Леонид Бродский"] },
+                        { role: "Заместитель, директор", names: ["Сергей Островский"] },
+                        { role: "Муж, 1-й перевозчик", names: ["Геннадий Гололобов"] },
+                        { role: "Сержант милиции, бригадир перевозчиков, старик", names: ["Александр Грайновский"] },
+                        { role: "1-й бандит, экспедитор", names: ["Юрий Маслюков"] },
+                        { role: "2-й бандит, новобрачный, телохранитель", names: ["Леонид Сапронов"] },
+                        { role: "Любовник, стажёр милиции, 2-й перевозчик", names: ["Александр Тульчинский"] }
+                    ]
                 },
                 crew: {
-                    en: "\n• [[Stage Director]] - Dmitry Shakhov;\n• [[Sound Operator]] - Anna Chulyukina;\n• [[Decorations]] - Alexander Gorokhov;\n• [[Light And Design]] - Anna Tulchinskaya.",
-                    ru: "\n• [[Режиссёр-постановщик]] - Дмитрий Шахов;\n• [[Звукооператор]] - Анна Чулюкина;\n• [[Декорации]] - Александр Горохов;\n• [[Свет и дизайн]] - Анна Тульчинская."
+                    en: [
+                        { role: "Stage Director", names: ["Dmitry Shakhov"] },
+                        { role: "Sound Operator", names: ["Anna Chulyukina"] },
+                        { role: "Decorations", names: ["Alexander Gorokhov"] },
+                        { role: "Light And Design", names: ["Anna Tulchinskaya"] }
+                    ],
+                    ru: [
+                        { role: "Режиссёр-постановщик", names: ["Дмитрий Шахов"] },
+                        { role: "Звукооператор", names: ["Анна Чулюкина"] },
+                        { role: "Декорации", names: ["Александр Горохов"] },
+                        { role: "Свет и дизайн", names: ["Анна Тульчинская"] }
+                    ]
                 }
             },
             image: "https://res.cloudinary.com/dsxkginei/image/upload/v1753878913/The_Road_ickhqm.avif"

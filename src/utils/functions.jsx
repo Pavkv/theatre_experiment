@@ -6,8 +6,9 @@ export default function DisplayText({ list, textClass = "" }) {
     const lines = list.split("\n").map(line => line.trim()).filter(Boolean);
     const elements = [];
 
-    const parseHighlights = (text) => {
-        const parts = text.split(/(\[\[.*?]])/g);
+    const parseLinksAndHighlights = (text) => {
+        const parts = text.split(/(\[\[.*?]]|\[.*?]\(.*?\))/g);
+
         return parts.map((part, idx) => {
             if (part.startsWith("[[") && part.endsWith("]]")) {
                 return (
@@ -16,6 +17,17 @@ export default function DisplayText({ list, textClass = "" }) {
                     </span>
                 );
             }
+
+            const linkMatch = part.match(/^\[(.*?)]\((.*?)\)$/);
+            if (linkMatch) {
+                const [, label, url] = linkMatch;
+                return (
+                    <a key={idx} href={url} target="_blank" rel="noopener noreferrer" className="inline-link">
+                        {label}
+                    </a>
+                );
+            }
+
             return <React.Fragment key={idx}>{part}</React.Fragment>;
         });
     };
@@ -41,14 +53,16 @@ export default function DisplayText({ list, textClass = "" }) {
             elements.push(
                 <ul key={`ul-${i}`} className={`bullet-list ${textClass}`}>
                     {bullets.map((item, idx) => (
-                        <li key={`li-${idx}`} className="bullet-list__item">{parseHighlights(item)}</li>
+                        <li key={`li-${idx}`} className="bullet-list__item">
+                            {parseLinksAndHighlights(item)}
+                        </li>
                     ))}
                 </ul>
             );
         } else {
             elements.push(
                 <p key={`p-${i}`} className={textClass}>
-                    {parseHighlights(line)}
+                    {parseLinksAndHighlights(line)}
                 </p>
             );
             i++;
