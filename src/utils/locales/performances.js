@@ -503,7 +503,6 @@ export const performances = {
                 },
                 actors: {
                     en: [
-                        { role: "Podkolyosin, a clerk", names: ["Alexander Kurapov"] },
                         { role: "Agafya Tikhonovna, a merchant's daughter", names: ["Elizaveta Yanovich"] },
                         { role: "Ariana Panteleimonovna, aunt", names: ["Elena Semenova"] },
                         { role: "Fekla Ivanovna, matchmaker", names: ["Natalia Leonova"] },
@@ -518,7 +517,6 @@ export const performances = {
                         { role: "Dream Woman", names: ["Svetlana Vasilchenko"] }
                     ],
                     ru: [
-                        { role: "Подколесин, чиновник", names: ["Александр Курапов"] },
                         { role: "Агафья Тихоновна, купеческая дочь", names: ["Елизавета Янович"] },
                         { role: "Арина Пантелеймоновна, тетка", names: ["Елена Семёнова"] },
                         { role: "Фекла Ивановна, сваха", names: ["Наталья Леонова"] },
@@ -589,7 +587,7 @@ export const performances = {
                         { role: "Duchess DuPont Dufour", names: ["Julia Tevelow"] },
                         { role: "Ms. Renault", names: ["Natalia Leonova"] },
                         { role: "Valentina Renault", names: ["Elena Semenova"] },
-                        { role: "Managing", names: ["Sergei Ostrovski"] },
+                        { role: "Manager", names: ["Sergei Ostrovski"] },
                         { role: "Georges Renault", names: ["Eugene Belyi"] },
                         { role: "Mr Pikvik, Lakey", names: ["Ilya Sviridyuk"] },
                         { role: "Juliet", names: ["Irina Ibragimova"] },
@@ -813,7 +811,7 @@ export const performances = {
                         { role: "Новобрачная, беременная", names: ["Майя Цидулько"] },
                         { role: "Жена, старая женщина", names: ["Марина Цидулько"] },
                         { role: "Незнакомец", names: ["Леонид Бродский"] },
-                        { role: "Заместитель, директор", names: ["Сергей Островский"] },
+                        { role: "Депутат, директор", names: ["Сергей Островский"] },
                         { role: "Муж, 1-й перевозчик", names: ["Геннадий Гололобов"] },
                         { role: "Сержант милиции, бригадир перевозчиков, старик", names: ["Александр Грайновский"] },
                         { role: "1-й бандит, экспедитор", names: ["Юрий Маслюков"] },

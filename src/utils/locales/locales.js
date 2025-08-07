@@ -31,8 +31,8 @@ export const locales = {
             ru: "Театр Эксперимент",
         },
         description: {
-            en: "Theater Experiment is a theater group based in Maryland, USA. Our goal is to provide residents of DC, Maryland, and Virginia, as well as of any other place in the US with the ability to experience quality theater and the works of the best writers of the world.",
-            ru: "Театр Эксперимент — это театральная группа, основанная в Мэриленде, США. Наша цель — предоставить жителям Вашингтона, Мэриленда и Вирджинии, а также всем желающим из других уголков США возможность насладиться качественным театром и произведениями лучших писателей мира."
+            en: "The Experiment Theater is a non-profit organization founded by a group of enthusiasts from Maryland, USA in 2010. The first director of the theater was Dmitry Shahov. Irina Rogozina, our Artistic Director, Director, and Acting Coach, joined the team in 2011.",
+            ru: "Театр Эксперимент — некоммерческая организация, основанная группой энтузиастов из Мэриленда, США, в 2010 году. Первым режиссером театра был Дмитрий Шахов. Ирина Рогозина, наш художественный руководитель, режиссер и актерский тренер, присоединилась к команде в 2011 году."
         },
     },
     footer: {

@@ -75,7 +75,7 @@ export const team = {
                         { role: "Gan-Dza-Lin, aka Gazolin", title: "Zoya's Apartment" },
                         { role: "Kuchumov", title: "Money to Burn" },
                         { role: "Zhevakyn, sailor", title: "Marriage" },
-                        { role: "Managing", title: "Passenger without luggage" },
+                        { role: "Manager", title: "Passenger without luggage" },
                         { role: "Petr Nikolaevich Sorin", title: "The Seagull" },
                         { role: "Deputy, Director", title: "The Road" },
                     ],
@@ -87,7 +87,7 @@ export const team = {
                         { role: "Жевакин, моряк", title: "Женитьба" },
                         { role: "Управляющий", title: "Пассажир без багажа" },
                         { role: "Петр Николаевич Сорин", title: "Чайка" },
-                        { role: "Заместитель, директор", title: "Дорога" },
+                        { role: "Депутат, директор", title: "Дорога" },
                     ]
                 }
             },
@@ -599,8 +599,8 @@ export const team = {
                 ru: "Актриса",
             },
             bio: {
-                en: "Graduated from Kiev National University of Culture and Arts. Specialty Theater Art. Specialization: directing pop and public holidays.\nShe studied the theater from school to the present.\nWithout theater, it is absolutely impossible and boring to live.",
-                ru: "Окончила Киевский Национальный Университет Культуры и Искусств. Специальность Театральное Искусство. Специализация: режиссура массовых и народных праздников.\nЗанималась театром со школы и до настоящего времени.\nБез театра жить абсолютно невозможно и скучно."
+                en: "Graduated from Kiev National University of Culture and Arts. Specialty Theater Art.\nShe studied the theater from school to the present.\nWithout theater, it is absolutely impossible and boring to live.",
+                ru: "Окончила Киевский Национальный Университет Культуры и Искусств. Специальность Театральное Искусство.\nЗанималась театром со школы и до настоящего времени.\nБез театра жить абсолютно невозможно и скучно."
             },
             participated: {
                 subheader: {
@@ -679,7 +679,7 @@ export const team = {
             participated: {
                 subheader: {
                     en: "Since 2016, in the Theater \"Experiment\". Participated in projects:",
-                    ru: "С 2016 года в Театре \"Эксперимент\". Участвовала в проектах:"
+                    ru: "С 2016 года в Театре \"Эксперимент\". Участвовал в проектах:"
                 },
                 performances: {
                     en: [
@@ -786,7 +786,7 @@ export const team = {
             participated: {
                 subheader: {
                     en: "Since 2019, in the Theater \"Experiment\". Participated in projects:",
-                    ru: "С 2019 года в Театре \"Эксперимент\". Участвовала в проектах:"
+                    ru: "С 2019 года в Театре \"Эксперимент\". Участвовал в проектах:"
                 },
                 performances: {
                     en: [
@@ -819,7 +819,7 @@ export const team = {
             participated: {
                 subheader: {
                     en: "Since 2022, in the Theater \"Experiment\". Participated in projects:",
-                    ru: "С 2022 года в Театре \"Эксперимент\". Участвовала в проектах:"
+                    ru: "С 2022 года в Театре \"Эксперимент\". Участвовал в проектах:"
                 },
                 performances: {
                     en: [
@@ -856,7 +856,7 @@ export const team = {
             participated: {
                 subheader: {
                     en: "Since 2019, in the Theater \"Experiment\". Participated in projects:",
-                    ru: "С 2019 года в Театре \"Эксперимент\". Участвовала в проектах:"
+                    ru: "С 2019 года в Театре \"Эксперимент\". Участвовал в проектах:"
                 },
                 performances: {
                     en: [
@@ -999,21 +999,19 @@ export const team = {
             },
             participated: {
                 subheader: {
-                    en: "Since 2016, in the Theater \"Experiment\". Participated in projects:",
-                    ru: "С 2016 года в Театре \"Эксперимент\". Участвовала в проектах:"
+                    en: "Since 2019, in the Theater \"Experiment\". Participated in projects:",
+                    ru: "С 2019 года в Театре \"Эксперимент\". Участвовал в проектах:"
                 },
                 performances: {
                     en: [
                         { role: "Berange", title: "Rhinoceros" },
                         { role: "I. Severyanin \"Strange\", \"Overture\", \"It Could Be So\"; A. Bely \"Memory\"", title: "Theater-territory of creativity" },
                         { role: "Boris Semyonovich Goose-Repairman", title: "Zoya's Apartment" },
-                        { role: "Podkolyosin, a clerk", title: "Marriage" },
                     ],
                     ru: [
                         { role: "Беранже", title: "Носорог" },
                         { role: "И. Северянин \"Странно\", \"Увертюра\", \"Могло быть так\"; А. Белый \"Воспоминание\"", title: "Театр-территория творчества" },
                         { role: "Борис Семёнович Гусь-Ремонтный", title: "Зойкина Квартира" },
-                        { role: "Подколесин, чиновник", title: "Женитьба" },
                     ]
                 }
             },

@@ -23,7 +23,9 @@
 }
 
 .media__modal-image {
-    width: calc(100% - 16px);
+    height: 80vh; /* Fits image by height */
+    width: auto;
+    max-width: 100%;
     object-fit: contain;
     border-radius: 8px;
     border: 3px solid #8d0101;
