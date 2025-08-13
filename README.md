@@ -2,7 +2,7 @@
 
 A modern reimagining of the Theatre Experiment website — a multilingual, media-rich, and accessible digital home for a vibrant theater group. This project combines elegant book-like design, React-powered interactivity, and flexible layouts to reflect the artistry and spirit of the performances.
 
-<img width="789" alt="image" src="https://github.com/user-attachments/assets/55f97141-3b9d-4204-94f9-fcddcdc43c4e" />
+<img width="866" height="769" alt="image" src="https://github.com/user-attachments/assets/762565f9-bc09-4b22-af3d-a30278a0641b" />
 
 ---
 
