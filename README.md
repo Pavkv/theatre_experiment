@@ -8,7 +8,7 @@ A modern reimagining of the Theatre Experiment website — a multilingual, media
 
 ## Web Link
 
-https://pavkv.github.io/theatre_expriment/
+https://www.theaterexperiment.com
 
 ---
 
