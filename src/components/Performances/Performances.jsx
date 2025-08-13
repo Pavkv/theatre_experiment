@@ -127,6 +127,13 @@ export default function Performances({isMobile}) {
                         )}
                     </div>
                 </div>
+                <Link
+                    to={`/media?caption=${encodeURIComponent(performance.title[l])}`}
+                    className="performance__media-btn"
+                    onClick={(e) => e.stopPropagation()}
+                >
+                    {t.viewPhotos?.[l]}
+                </Link>
                 <button
                     onClick={() => toggleExpand(null)}
                     className="performance__close"

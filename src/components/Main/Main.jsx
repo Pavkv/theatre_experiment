@@ -9,7 +9,7 @@ export default function Main() {
             <p className="main__description">{locales.main.description[l]}</p>
             <img
                 className="main__image"
-                src={new URL("../../assets/title_image.jpg", import.meta.url).href}
+                src={new URL("../../assets/title_image.avif", import.meta.url).href}
                 alt="Theather image"
             />
         </main>

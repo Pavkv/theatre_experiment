@@ -183,6 +183,24 @@
     flex-direction: column;
 }
 
+.performance__media-btn {
+    margin-top: 16px;
+    align-self: flex-start;
+    padding: 10px 18px;
+    border-radius: 8px;
+    border: 2px solid #8d0101;
+    background: #fff;
+    color: #8d0101;
+    text-decoration: none;
+    font-weight: 600;
+    transition: transform .2s, background-color .2s, color .2s;
+}
+.performance__media-btn:hover {
+    background: #8d0101;
+    color: #fff;
+    transform: translateY(-1px);
+}
+
 .performance__close {
     position: absolute;
     top: 16px;

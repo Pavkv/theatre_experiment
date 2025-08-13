@@ -31,7 +31,7 @@ export const locales = {
             ru: "Театр Эксперимент",
         },
         description: {
-            en: "The Experiment Theater is a non-profit organization founded by a group of enthusiasts from Maryland, USA in 2010. The first director of the theater was Dmitry Shahov. Irina Rogozina, our Artistic Director, Director, and Acting Coach, joined the team in 2011.",
+            en: "The Experiment Theater is a non-profit organization founded by group of enthusiasts in 2010 in Maryland. The first director was Dmitry Shahov. Irina Rogozina, who is our Artistic Director and Acting Coach, came on board in 2011.",
             ru: "Театр Эксперимент — некоммерческая организация, основанная группой энтузиастов из Мэриленда, США, в 2010 году. Первым режиссером театра был Дмитрий Шахов. Ирина Рогозина, наш художественный руководитель, режиссер и актерский тренер, присоединилась к команде в 2011 году."
         },
     },
@@ -43,10 +43,6 @@ export const locales = {
         title: {
             en: "About Our Theater",
             ru: "О нашем театре",
-        },
-        description: {
-            en: "The Experiment Theater is a theater group based in Maryland, USA. The theater was founded in 2010 by Dmitry Shahov, producer and video director. Irina Rogozina, who is our Artistic Director and Acting Coach, came on board in 2011.",
-            ru: "Театр Эксперимент — это театральная группа, основанная в Мэриленде, США. Театр был основан в 2010 году Дмитрием Шаховым, продюсером и видео режиссером. Ирина Рогозина, наш художественный руководитель и актерский тренер, присоединилась к команде в 2011 году."
         },
         goal: {
             en: "[[Our goal]]  is to provide residents of DC, Maryland, and Virginia, as well as of any other place in the US with the ability to experience quality theater and the works of the best writers of the world at an affordable price. Each time we perform on stage, we would like to extend our hand of friendship to everyone, from our heart to your heart: [[to make our world a better place through the magic of literature and theater.]]",

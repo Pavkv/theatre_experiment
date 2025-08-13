@@ -3,6 +3,10 @@ export const performances = {
         en: "Performances",
         ru: "Спектакли",
     },
+    viewPhotos: {
+        en: "View Photos",
+        ru: "Посмотреть фотографии",
+    },
     performances: [
         {
             id: 0,
