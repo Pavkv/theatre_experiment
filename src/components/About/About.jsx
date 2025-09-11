@@ -20,7 +20,7 @@ export default function About({isMobile, isTablet}) {
                         <img className="about__image" src={new URL("../../assets/team.avif", import.meta.url).href} alt="" />
                         <DisplayText list={t.team[l]} textClass={"about__text"} />
 
-                        <img className="about__image" src={new URL("../../assets/director.jpg", import.meta.url).href} alt="" />
+                        <img className="about__image" src={new URL("../../assets/director.avif", import.meta.url).href} alt="" />
                         <DisplayText list={t.director[l]} textClass={"about__text"} />
                     </>
                 ) : (
@@ -31,7 +31,7 @@ export default function About({isMobile, isTablet}) {
                         <DisplayText list={t.team[l]} textClass={"about__text"} />
                         <img className="about__image" src={new URL("../../assets/team.avif", import.meta.url).href} alt="" />
 
-                        <img className="about__image" src={new URL("../../assets/director.jpg", import.meta.url).href} alt="" />
+                        <img className="about__image" src={new URL("../../assets/director.avif", import.meta.url).href} alt="" />
                         <DisplayText list={t.director[l]} textClass={"about__text"} />
                     </>
                 )}
