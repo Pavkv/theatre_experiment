@@ -39,8 +39,17 @@ export default function Header({isMobile, isMobileMenuOpen, toggleMobileMenu}) {
             ${isMobileMenuOpen ? "header__mobile-open" : ""}
 `       }>
             <div className="header__content">
-                <Link to="/" className="header__link">
-                    <p className="header__logo">{locales.logo[l]}</p>
+                <Link to="/" className="header__link header__home">
+                    <img
+                        src={new URL("../../assets/Icon.svg", import.meta.url).href}
+                        alt="Logo"
+                        className="header__icon"
+                    />
+                    <p className="header__logo">
+                        {locales.logo[l].split(" ").map((word, i) => (
+                            <span key={i}>{word} </span>
+                        ))}
+                    </p>
                 </Link>
 
                 {isMobile ? (
