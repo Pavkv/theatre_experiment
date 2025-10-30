@@ -134,6 +134,16 @@ export default function Performances({isMobile}) {
                 >
                     {t.viewPhotos?.[l]}
                 </Link>
+                {performance.video && (
+                    <a
+                        className="performance__media-btn"
+                        href={performance.video}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        {t.viewPerformance?.[l]}
+                    </a>
+                )}
                 <button
                     onClick={() => toggleExpand(null)}
                     className="performance__close"

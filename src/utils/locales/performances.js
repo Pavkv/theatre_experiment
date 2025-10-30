@@ -5,7 +5,11 @@ export const performances = {
     },
     viewPhotos: {
         en: "View Photos",
-        ru: "Посмотреть фотографии",
+        ru: "Посмотреть Фотографии",
+    },
+    viewPerformance: {
+        en: "View Performance",
+        ru: "Посмотреть Спектакль",
     },
     performances: [
         {
@@ -112,7 +116,8 @@ export const performances = {
                     ]
                 }
             },
-            image: "https://res.cloudinary.com/dsxkginei/image/upload/v1753458981/Nosorog_qg6tjy.avif"
+            image: "https://res.cloudinary.com/dsxkginei/image/upload/v1753458981/Nosorog_qg6tjy.avif",
+            video: "https://youtu.be/sJ_yCn3YqpE"
         },
         {
             id: 1,
@@ -472,7 +477,8 @@ export const performances = {
                     ]
                 }
             },
-            image: "https://res.cloudinary.com/dsxkginei/image/upload/v1753585947/Money_To_Burn_kgrxy4.avif"
+            image: "https://res.cloudinary.com/dsxkginei/image/upload/v1753585947/Money_To_Burn_kgrxy4.avif",
+            video: "https://youtu.be/dXC9k8HQEx8"
         },
         {
             id: 5,
@@ -552,7 +558,8 @@ export const performances = {
                     ]
                 }
             },
-            image: "https://res.cloudinary.com/dsxkginei/image/upload/v1753807307/Marriage_mcppyg.avif"
+            image: "https://res.cloudinary.com/dsxkginei/image/upload/v1753807307/Marriage_mcppyg.avif",
+            video: "https://youtu.be/kFAxV69j8GU"
         },
         {
             id: 6,
