@@ -1,6 +1,6 @@
 .social-links {
     display: flex;
-    gap: 40px;
+    gap: clamp(0.5rem, 2vw, 2.5rem);
     justify-content: center;
     align-items: center;
 }
